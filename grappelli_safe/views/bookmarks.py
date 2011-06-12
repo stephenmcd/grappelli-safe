@@ -8,6 +8,7 @@ from django.shortcuts import HttpResponse, render_to_response
 from django.http import HttpResponseRedirect
 from django.contrib.admin.views.decorators import staff_member_required
 from django.utils.translation import ugettext as _
+from django.template import RequestContext
 
 # grappelli imports
 from grappelli_safe.models.bookmarks import Bookmark, BookmarkItem
@@ -24,7 +25,7 @@ def add_bookmark(request):
     """
     Add Site to Bookmarks.
     """
-    
+
     if request.method == 'POST':
         if request.POST.get('path') and request.POST.get('title'):
             next = urllib.unquote(request.POST.get('path'))
@@ -49,7 +50,7 @@ def add_bookmark(request):
     else:
         msg = ['error', _('Site could not be added to Bookmarks.')]
         next = ADMIN_URL
-    
+
     # MESSAGE & REDIRECT
     if not request.session.get('grappelli'):
         request.session['grappelli'] = {}
@@ -63,7 +64,7 @@ def remove_bookmark(request):
     """
     Remove Site from Bookmarks.
     """
-    
+
     if request.GET:
         if request.GET.get('path'):
             next = urllib.unquote(request.GET.get('path'))
@@ -78,7 +79,7 @@ def remove_bookmark(request):
             next = ADMIN_URL
     else:
         msg = ['error', _('Site could not be removed from Bookmarks.')]
-    
+
     # MESSAGE & REDIRECT
     if not request.session.get('grappelli'):
         request.session['grappelli'] = {}
@@ -92,7 +93,7 @@ def get_bookmark(request):
     """
     Get Bookmarks for the currently logged-in User (AJAX request).
     """
-    
+
     if request.method == 'GET':
         if request.GET.get('path'):
             object_list = BookmarkItem.objects.filter(bookmark__user=request.user).order_by('order')
@@ -113,13 +114,13 @@ def get_bookmark(request):
     else:
         object_list = ""
         is_bookmark = ""
-    
-    return render_to_response('admin/includes_grappelli/bookmarks.html', {
+
+    return render_to_response('admin/includes_grappelli/bookmarks.html', RequestContext({
         'object_list': object_list,
         'bookmark': bookmark,
         'is_bookmark': is_bookmark,
         'admin_title': ADMIN_TITLE,
         'path': request.GET.get('path', ''),
-    })
+    }))
 get_bookmark = staff_member_required(get_bookmark)
 
