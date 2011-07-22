@@ -52,7 +52,7 @@ a img {
 a:link img.preview, a:visited img.preview {
     margin-top: 5px; padding: 5px;
     border: 1px solid #309bbf;
-    -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
     background: #fff;
 }
 a:hover img.preview, a:active img.preview {

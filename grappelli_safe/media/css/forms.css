@@ -13,8 +13,8 @@ fieldset {
 }
 fieldset > div:last-child {
     border-bottom: none !important;
-    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
 }
 
 .form-row {
@@ -26,8 +26,8 @@ fieldset > div:last-child {
 }
 .form-row:first-child {
     border-top: none;
-    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;
-    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px;
 }
 .inline-related .form-row {
     padding: 5px 11px;
@@ -140,7 +140,7 @@ input, textarea, select, button {
     color: #666; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;
     border: 1px solid #bbb;
     border-color: #ccc #ddd #ddd #ccc;
-    -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
     outline: none;
 }
 input:focus, textarea:focus, select:focus {
@@ -356,9 +356,9 @@ input.vManyToManyRawIdAdminField,
     width: 214px !important;
     border: 1px solid #999;
     border-color: #999 #bbb #bbb #999;
-    -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
     background: #fff;
-    -moz-box-shadow: 0 1px 5px #999; -webkit-box-shadow: 0 0 5px #999;
+    -moz-box-shadow: 0 1px 5px #999; -webkit-box-shadow: 0 0 5px #999; box-shadow: 0 1px 5px #999;
     overflow: auto !important;
 }
 .ac_results ul li {
@@ -368,13 +368,13 @@ input.vManyToManyRawIdAdminField,
     cursor: pointer;
 }
 .ac_results ul li:first-child {
-    -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px;
-    -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-topleft: 2px; -webkit-border-top-left-radius: 2px; border-top-left-radius: 2px;
+    -moz-border-radius-topright: 2px; -webkit-border-top-right-radius: 2px; border-top-right-radius: 2px;
 }
 .ac_results ul li:last-child {
     border-bottom: none;
-    -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px;
-    -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px;
+    -moz-border-radius-bottomleft: 2px; -webkit-border-bottom-left-radius: 2px; border-bottom-left-radius: 2px;
+    -moz-border-radius-bottomright: 2px; -webkit-border-bottom-right-radius: 2px; border-bottom-right-radius: 2px;
 }
 .ac_results ul li:hover {
     color: #666;
@@ -410,7 +410,7 @@ input[type=submit], input[type=button], button {
     width: auto; height: 25px;
     color: #fff;
     border: none;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #acd7e5;
     cursor: pointer;
 }
@@ -431,7 +431,7 @@ input[type=submit], input[type=button], button {
 .submit-row a.cancellink {
     display: block;
     padding: 5px 7px 4px;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
 }
 
 input[type=submit].default, input[type=button].default, button.default {
@@ -484,7 +484,7 @@ button:hover, button:active,
 .errornote {
     margin-bottom: 5px; padding: 4px 5px 4px 10px;
     color: #f7f7f7; font-size: 11px; font-weight: bold;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #bf3030;
 }
 

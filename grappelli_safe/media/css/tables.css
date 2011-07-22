@@ -143,10 +143,10 @@ table#change-history tbody th {
     width: 150px;
 }
 table#change-history thead th:first-child {
-    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px;
 }
 table#change-history thead th:last-child {
-    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px;
 }
 
 

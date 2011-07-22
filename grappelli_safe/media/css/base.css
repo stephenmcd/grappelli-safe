@@ -123,7 +123,7 @@ ul#bookmarks li.action a {
     margin: 0;
     width: 18px; height: 22px;
     border: 1px solid transparent;
-    -moz-border-radius: 3px; -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
@@ -170,10 +170,10 @@ ul#bookmarks-listing {
     margin: 0;
     width: 260px;
     border: 1px solid #404040;
-    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
     background: #333;
-    -moz-box-shadow: 0 0 10px #333; -webkit-box-shadow: 0 0 10px #333;
+    -moz-box-shadow: 0 0 10px #333; -webkit-box-shadow: 0 0 10px #333; box-shadow: 0 0 10px #333;
 }
 ul#bookmarks-listing li {
     float: none;
@@ -198,8 +198,8 @@ ul#bookmarks-listing li a:hover, ul#bookmarks-listing li a:active {
     background: #309bbf;
 }
 ul#bookmarks-listing li:last-child a {
-    -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px;
 }
 
 
@@ -211,10 +211,10 @@ ul#bookmarks-listing li:last-child a {
     margin: 0; padding: 10px;
     width: 240px;
     border: 1px solid #404040;
-    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
     background: #333;
-    -moz-box-shadow: 0 0 10px #333; -webkit-box-shadow: 0 0 10px #333;
+    -moz-box-shadow: 0 0 10px #333; -webkit-box-shadow: 0 0 10px #333; box-shadow: 0 0 10px #333;
 }
 #bookmark-add input[type=text] {
     margin-bottom: 10px;
@@ -389,7 +389,7 @@ body.popup ul.messagelist + #content {
     margin: 0; padding: 5px 10px;
     height: 16px;
     font-size: 11px;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
 }
 .object-tools a:link, .object-tools a:visited {
     color: #666;

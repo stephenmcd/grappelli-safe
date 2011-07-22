@@ -10,14 +10,14 @@
     margin: 0; padding: 7px 5px 6px 10px;
     color: #444; font-size: 12px; line-height: 16px; font-weight: bold;
     border-bottom: 1px solid #d4d4d4;
-    -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px;
-    -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px;
     background-color: #e6e6e6;
 }
 .inline-related h3, 
 .inline-related h4 {
-    -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px;
-    -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; border-top-right-radius: 4px;
 }
 .module caption a:link, .module caption a:visited {
     color: #444;
@@ -34,7 +34,7 @@
 .module {
     margin-bottom: 5px;
     border: 1px solid #d4d4d4;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #fff;
 }
 #content-main .module, 
@@ -70,7 +70,7 @@ h4.collapse-toggle {
     cursor: pointer;
 }
 .collapse-closed > .collapse-toggle {
-    -moz-border-radius: 4px; -webkit-border-radius: 4px;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
     background-position: 0 100%;
 }
 fieldset.collapse-closed > .collapse-toggle, 
@@ -128,7 +128,7 @@ fieldset.collapse-open h2.collapse-toggle {
     position: relative;
     margin: 6px 0 7px; padding: 2px;
     border: 2px solid #b3b3b3;
-    -moz-border-radius: 7px; -webkit-border-radius: 7px;
+    -moz-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
     background: #fff;
 }
 .inline-group.collapse-closed {
@@ -141,7 +141,7 @@ fieldset.collapse-open h2.collapse-toggle {
 .inline-group h2 {
     padding-left: 11px !important;
     border: 1px solid #c4c4c4;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background-color: #e0e0e0;
 }
 .inline-group.collapse-closed h2.collapse-toggle {
@@ -169,7 +169,7 @@ fieldset.collapse-open h2.collapse-toggle {
     position: relative; display: block;
     margin: 3px 0 0; padding: 0;
     border: 1px solid #d4d4d4;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
 }
 .inline-related.collapse-closed:hover, 
 .inline-related.collapse-open {
@@ -184,8 +184,8 @@ fieldset.collapse-open h2.collapse-toggle {
 .inline-related .module.collapse-open {
     margin: 1px -1px -1px;
     border: 1px solid;
-    -moz-border-radius-topleft: 0;
-    -moz-border-radius-topright: 0;
+    -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0;
+    -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0;
 }
 .inline-related .module.collapse-closed, 
 .inline-related .module.collapse-closed:hover, 
@@ -197,8 +197,8 @@ fieldset.collapse-open h2.collapse-toggle {
 
 .inline-related h3 + * + .module {
     border-top: 1px solid #fff;
-    -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0;
-    -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0;
+    -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0;
 }
 
 
@@ -301,13 +301,13 @@ fieldset.collapse-open h2.collapse-toggle {
 }
 .inline-tabular .legend .form-cell:last-child {
     border-right: none;
-    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
 }
 .inline-tabular .fieldset .form-cell:first-child {
     border-left: 1px solid #ccc;
-    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px;
-    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px;
 }
 
 
@@ -337,7 +337,7 @@ fieldset.collapse-open h2.collapse-toggle {
 .sortablehelper h3 {
     margin: 0 !important; padding: 5px 0 4px 37px;
     color: #fff; font-size: 12px; line-height: 15px;
-    -moz-border-radius: 5px; -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #65a3c2;
 }
 
@@ -411,8 +411,8 @@ ul.inline-item-tools li:last-child {
     margin: 0; padding: 0;
     width: 100%;
     text-align: right;
-    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px;
 }
 
 .form-cell ul.inline-item-tools {
@@ -445,11 +445,11 @@ ul.inline-item-tools li:last-child {
 ul.inline-item-tools li:last-child a, 
 .inline-related.collapsed ul.inline-item-tools li:last-child a {
     border-right: none;
-    -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px;
-    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px; -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px;
 }
 .inline-related ul.inline-item-tools li:last-child a {
-    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px;
 }
 
 
