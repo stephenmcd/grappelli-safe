@@ -115,7 +115,7 @@ def get_bookmark(request):
         object_list = ""
         is_bookmark = ""
 
-    return render_to_response('admin/includes_grappelli/bookmarks.html', RequestContext({
+    return render_to_response('admin/includes_grappelli/bookmarks.html', RequestContext(request, {
         'object_list': object_list,
         'bookmark': bookmark,
         'is_bookmark': is_bookmark,
