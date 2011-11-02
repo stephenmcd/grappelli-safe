@@ -107,7 +107,12 @@ function M2MLookup(obj) {
     var text = obj.next().next();
     var app_label = link.attr('href').split('/')[2];
     var model_name= link.attr('href').split('/')[3];
-    
+
+    if (text.length == 0) {
+        obj.next().after('&nbsp;<strong>&nbsp;</strong>');
+        text = obj.next().next()
+    }
+        
     text.text('loading ...');
     
     // get object
