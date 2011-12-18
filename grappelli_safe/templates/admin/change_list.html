@@ -50,7 +50,7 @@
 <!-- CONTENT -->
 {% block content %}
     <div id="content-main">
-        
+
         <!-- Object-Tools -->
         {% block object-tools %}
             {% if has_add_permission %}
@@ -65,7 +65,7 @@
                 </ul>
             {% endif %}
         {% endblock %}
-        
+
         <!-- Errors -->
         {% if cl.formset.errors %}
             <p class="errornote">
@@ -73,20 +73,20 @@
             </p>
             <ul class="errorlist">{% for error in cl.formset.non_field_errors %}<li>{{ error }}</li>{% endfor %}</ul>
         {% endif %}
-        
+
         <!-- Changelist -->
         <div class="module{% if cl.has_filters or cl.search_fields or cl.date_hierarchy %} filtered{% endif %}" id="changelist">
             <div class="changelist-content">
                 <form action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>{% grp_csrf_token %}
-                
+
                 <!-- Popup Hidden Field -->
                 {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
-                
+
                 <!-- Management Form -->
                 {% if cl.formset %}
                     {{ cl.formset.management_form }}
                 {% endif %}
-                
+
                 <!-- Results -->
                 <div class="result-list-container">
                     {% block result_list %}
@@ -96,7 +96,7 @@
                     {% endblock %}
                     {% block pagination %}{% pagination cl %}{% endblock %}
                 </div>
-                
+
                 <!-- Submit-Row -->
                 {% if cl.formset and cl.result_count %}
                     <p class="submit-row">
@@ -105,12 +105,12 @@
                 {% endif %}
                 </form>
             </div>
-            
+
             <!-- Sidebar -->
             {% block filters %}
                 {% if cl.has_filters or cl.search_fields or cl.date_hierarchy %}
                     <div id="changelist-filter">
-                        
+
                         <!-- Results -->
                         {% ifnotequal cl.result_count cl.full_result_count %}
                         <div class="module results">
@@ -121,13 +121,13 @@
                             </div>
                         </div>
                         {% endifnotequal %}
-                        
+
                         <!-- Search -->
                         {% block search %}{% search_form cl %}{% endblock %}
-                        
+
                         <!-- Date Hierarchy -->
                         {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
-                        
+
                         {% if cl.has_filters %}
                         <!-- Filter -->
                         <div class="module filter">
@@ -135,11 +135,11 @@
                             {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
                         </div>
                         {% endif %}
-                        
+
                     </div>
                 {% endif %}
             {% endblock %}
         </div>
-        
+
     </div>
 {% endblock %}
