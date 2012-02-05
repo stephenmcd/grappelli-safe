@@ -321,7 +321,7 @@ body.popup ul.messagelist + #content {
 
 #content-main {
     float: left;
-    width: auto;
+    min-width:100%;
 }
 #content-related {
     position: relative; float: right;
