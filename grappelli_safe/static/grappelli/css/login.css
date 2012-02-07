@@ -17,7 +17,7 @@ body.login .errornote {
     overflow: hidden;
 }
 
-.login #content-main, 
+.login #content-main,
 .login .submit-row {
     float: none;
     margin: 0 auto;
@@ -29,6 +29,7 @@ body.login .errornote {
     border: 1px solid #d4d4d4;
     -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #eee;
+    min-width:360px;
 }
 
 .login .form-row label {
