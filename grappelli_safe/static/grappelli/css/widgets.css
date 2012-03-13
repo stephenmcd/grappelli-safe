@@ -65,7 +65,7 @@
     width: 698px;
 }
 .selector h2 + select {
-    display: none; position: relative; top: -1px;
+    position: relative; top: -1px;
     border-top: none;
 }
 
