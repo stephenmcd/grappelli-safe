@@ -168,6 +168,9 @@
             // Resize window
             DOM.setStyles(id, {top : f.top, left : f.left, width : f.width + dw, height : f.height + dh});
             u = f.url || f.file;
+            if (window.__static_proxy && u.substr(u.length - 4) == '.htm') {
+                u = window.__static_proxy + '?u=' + u;
+            }
             if (u) {
                 if (tinymce.relaxedDomain)
                     u += (u.indexOf('?') == -1 ? '?' : '&') + 'mce_rdomain=' + tinymce.relaxedDomain;
