@@ -59,6 +59,11 @@
     border: none;
 }
 
+.changelist-actions li.all,
+.changelist-actions li.clear-selection,
+.changelist-actions li.question {
+   display: none;
+}
 
 
 /*  Changelist Table
