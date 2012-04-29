@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="grappelli_safe",
-    version="0.2.5",
+    version="0.2.6",
     description="A snapshot of the grappelli_2 branch of django-grappelli, "
                 "packaged as a dependency for the Mezzanine CMS for Django.",
     long_description=open("README.rst").read(),
