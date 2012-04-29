@@ -17,11 +17,7 @@
 {% block javascripts %}
     <script type="text/javascript" src="../../jsi18n/"></script>
     {{ block.super }}
-    <script type="text/javascript" src="{% admin_media_prefix %}js/core.js"></script>
-    <script type="text/javascript" src="{% admin_media_prefix %}js/admin/RelatedObjectLookups.js"></script>
-    <script type="text/javascript" src="{% admin_media_prefix %}js/jquery.js"></script>
-    <script type="text/javascript" src="{% admin_media_prefix %}js/jquery.init.js"></script>
-    <script type="text/javascript" src="{% admin_media_prefix %}js/actions.min.js"></script>
+    {{ media|use_grappelli_media }}
     <script type="text/javascript" src="{% admin_media_prefix %}js/admin/Changelist.js"></script>
     {% if is_popup %}
     <script type="text/javascript">
