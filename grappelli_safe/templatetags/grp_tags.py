@@ -26,7 +26,6 @@ def use_grappelli_media(media):
         for f in getattr(media, attr)():
             f = f.replace(settings.STATIC_URL + "admin/",
                           settings.ADMIN_MEDIA_PREFIX, 1)
-            print f
             html.append(f)
     return mark_safe("\n".join(html))
 
