@@ -13,8 +13,6 @@ from django.contrib.auth.models import Group
 from django.utils.safestring import mark_safe
 
 # grappelli imports
-from grappelli_safe.models.help import HelpItem
-from grappelli_safe.models.navigation import Navigation, NavigationItem
 from grappelli_safe.settings import *
 
 register = template.Library()
@@ -28,63 +26,6 @@ def use_grappelli_media(media):
                           settings.ADMIN_MEDIA_PREFIX, 1)
             html.append(f)
     return mark_safe("\n".join(html))
-
-
-# GENERIC OBJECTS
-class do_get_generic_objects(template.Node):
-
-    def __init__(self):
-        pass
-
-    def render(self, context):
-        return_string = "var MODEL_URL_ARRAY = {"
-        for c in ContentType.objects.all().order_by('id'):
-            return_string = "%s%d: '%s/%s'," % (return_string, c.id, c.app_label, c.model)
-        return_string = "%s}" % return_string[:-1]
-        return return_string
-
-def get_generic_relation_list(parser, token):
-    """
-    Returns a list of installed applications and models.
-    Needed for lookup of generic relationships.
-    """
-
-    tokens = token.contents.split()
-    return do_get_generic_objects()
-
-register.tag('get_generic_relation_list', get_generic_relation_list)
-
-
-# CONTEXT-SENSITIVE HELP
-def get_help(path):
-    """
-    Context Sensitive Help (currently not implemented).
-    """
-
-    try:
-        helpitem = HelpItem.objects.get(link=path)
-    except HelpItem.DoesNotExist:
-        helpitem = ""
-
-    return { 'helpitem': helpitem }
-
-register.inclusion_tag('admin/includes_grappelli/help.html')(get_help)
-
-
-# NAVIGATION
-def get_navigation(user):
-    """
-    User-related Navigation/Sidebar on the Admin Index Page.
-    """
-
-    if user.is_superuser:
-        object_list = NavigationItem.objects.all()
-    else:
-        object_list = NavigationItem.objects.filter(Q(groups__in=user.groups.all()) | Q(users=user)).distinct()
-
-    return { 'object_list': object_list }
-
-register.inclusion_tag('admin/includes_grappelli/navigation.html')(get_navigation)
 
 
 # SEARCH FIELDS VERBOSE
