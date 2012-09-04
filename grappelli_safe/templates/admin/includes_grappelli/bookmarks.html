@@ -15,7 +15,7 @@
     <li class="action bookmark-add{% if not is_bookmark %} active{% endif %}">
         {% if not is_bookmark %}<a href="javascript://" id="toggle-bookmark-add" class="bookmark-add"> </a>{% else %}&nbsp;{% endif %}
         <div id="bookmark-add">
-            <form action="{% url grp_bookmark_add %}" method="POST">{% grp_csrf_token %}
+            <form action="{% url "grp_bookmark_add" %}" method="POST">{% grp_csrf_token %}
                 <input id="bookmark-path" name="path" type="hidden" value="" />
                 <input id="bookmark-title" name="title" type="text" value="" />
                 <button id="bookmark-add-cancel">{% trans "Cancel" %}</button>
@@ -24,7 +24,7 @@
         </div>
     </li>
     <li class="action bookmark-remove{% if is_bookmark %} active{% endif %}">
-        {% if is_bookmark %}<a href="{% url grp_bookmark_remove %}?path={{ path|urlencode }}" class="bookmark-remove"> </a>{% else %}&nbsp;{% endif %}
+        {% if is_bookmark %}<a href="{% url "grp_bookmark_remove" %}?path={{ path|urlencode }}" class="bookmark-remove"> </a>{% else %}&nbsp;{% endif %}
     </li>
     <li class="action bookmark-manage">
         <a href="{% get_admin_url %}grappelli/bookmark/{{ bookmark.id }}/" class="bookmark-manage"> </a>
