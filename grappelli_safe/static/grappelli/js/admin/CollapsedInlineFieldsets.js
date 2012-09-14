@@ -20,11 +20,6 @@ $(document).ready(function(){
     $('div.inline-group.collapse-open').each(function() {
         $(this).find('h2:first').attr("class", "collapse-toggle");
     });
-    $('div.inline-group h2.collapse-toggle').bind("click", function(){
-        $(this).parent().toggleClass('collapsed');
-        $(this).parent().toggleClass('collapse-closed');
-        $(this).parent().toggleClass('collapse-open');
-    });
     
     /// OPEN STACKEDINLINE WITH ERRORS (onload)
     $('div.inline-stacked div.inline-related').find('div[class*="errors"]:first').each(function(){
