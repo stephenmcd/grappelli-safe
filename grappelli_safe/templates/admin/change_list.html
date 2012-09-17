@@ -15,7 +15,8 @@
 
 <!-- JAVASCRIPTS -->
 {% block javascripts %}
-    <script type="text/javascript" src="../../jsi18n/"></script>
+    {% url admin:jsi18n as jsi18nurl %}
+    <script type="text/javascript" src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
     {{ block.super }}
     {{ media|use_grappelli_media }}
     <script type="text/javascript" src="{% admin_media_prefix %}js/admin/Changelist.js"></script>
