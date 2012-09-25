@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load adminmedia admin_list i18n grp_tags grp_csrf %}
+{% load adminmedia admin_list i18n future grp_tags grp_csrf %}
 
 <!-- STYLES -->
 {% block extrastyle %}
@@ -15,7 +15,7 @@
 
 <!-- JAVASCRIPTS -->
 {% block javascripts %}
-    {% url admin:jsi18n as jsi18nurl %}
+    {% url "admin:jsi18n" as jsi18nurl %}
     <script type="text/javascript" src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
     {{ block.super }}
     {{ media|use_grappelli_media }}
