@@ -12,7 +12,7 @@
               {% if field.is_checkbox %}
                   {{ field.field }}{{ field.label_tag }}
               {% else %}
-                  {{ field.label_tag }}{{ field.field }}
+                  {{ field.label_tag }}{{ field.field }} &nbsp;
               {% endif %}
           {% endif %}
           {% if field.field.field.help_text %}<p class="help">{{ field.field.field.help_text|safe }}</p>{% endif %}
