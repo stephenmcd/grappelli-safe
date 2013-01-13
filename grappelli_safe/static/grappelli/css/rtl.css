@@ -1,23 +1,32 @@
 body {
     direction: rtl;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* base */
+
+.object-tools li {
+    float: right;
+    margin: 0 5px 0 0;
 }
 
 /* LOGIN */
 
-.login .form-row {
-    float: right;
+.login #content-main {
+    min-width: 380px;
 }
 
 .login .form-row label {
     float: right;
     padding-left: 0.5em;
     padding-right: 0;
-    text-align: left;
+    width: 140px;
 }
 
-.login .submit-row {
-    clear: both;
-    padding: 1em 9.4em 0 0;
+.login .submit-row input {
+    margin-left: -1px;
+    margin-right: 8px;
 }
 
 /* GLOBAL */
@@ -48,14 +57,30 @@ th {
 
 /* LAYOUT */
 
+#user-tools li, .admin-title {
+    border-left: 1px solid #262626;
+    border-right: 1px solid #404040;
+}
+
+.admin-title {
+    float: right;
+}
+
 #user-tools {
     right: auto;
     left: 0;
     text-align: left;
+    border-left: 0;
+    border-right: 1px solid #262626;
+}
+
+#header ul li {
+    float: right;
 }
 
 div.breadcrumbs {
     text-align: right;
+    padding: 3px 15px 3px 8px;
 }
 
 #content-main {
@@ -70,14 +95,33 @@ div.breadcrumbs {
 
 .colMS {
     margin-left: 20em !important;
-    margin-right: 10px !important;
+    margin-right: 0 !important;
 }
 
 /* dashboard styles */
 
 .dashboard .module table td a {
-    padding-left: .6em;
-    padding-right: 12px;
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 14px;
+    margin-right: 10px;
+}
+
+ul.actionlist li {
+    padding: 2px 25px 0 10px;
+    line-height: 16px;
+}
+
+ul.actionlist li a {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 13px;
+    margin-right: -14px;
+    background-position: 100% 50%;
+}
+
+ul.actionlist li.deletelink {
+    background-position: 232px 5px;
 }
 
 /* changelists styles */
@@ -92,15 +136,9 @@ div.breadcrumbs {
 }
 
 #changelist-filter {
-    right: auto;
-    left: 0;
-    border-left: 0px none;
-    border-right: 1px solid #ddd;
-}
-
-.change-list .filtered table, .change-list .filtered .paginator, .filtered #toolbar, .filtered div.xfull {
-    margin-right: 0px !important;
-    margin-left: 160px !important;
+    float: right;
+    margin-right: 0;
+    margin-left: -10000px;
 }
 
 #changelist-filter li.selected {
@@ -112,6 +150,60 @@ div.breadcrumbs {
     margin-right: -10px;
 }
 
+#changelist.filtered .changelist-content {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+#changelist.module.filtered {
+    padding-right: 0;
+    padding-left: 210px;
+}
+
+#changelist .actions label {
+    margin: -2px 5px -2px 0;
+    padding: 5px 25px 7px 0;
+    background-position: 100% 50%;
+}
+
+/* modules */
+
+.module > h2, .module caption, .inline-group h2, .inline-related h2 {
+    padding: 7px 10px 6px 5px;
+}
+
+/* tables */
+
+#changelist table {
+    margin-right: 0;
+    border-right: none;
+    margin-left: -1px;
+    border-left: 1px solid #D4D4D4;
+}
+
+thead th, tfoot td {
+    border-right: 1px solid #D4D4D4;
+    border-left: none;
+}
+
+thead th:first-child, tfoot td:first-child {
+    border-right: none;
+}
+
+#changelist tbody th, #changelist tbody td {
+    border-right: 1px solid #E0E0E0;
+    border-left: none;
+}
+
+#changelist tbody tr th:first-child, #changelist tbody tr td:first-child {
+    border-right: none;
+}
+
+caption, th, td {
+    text-align: right;
+}
+
 /* FORMS */
 
 .aligned label {
@@ -120,7 +212,7 @@ div.breadcrumbs {
 }
 
 .submit-row {
-    text-align: left
+    text-align: right;
 }
 
 .submit-row p.deletelink-box {
@@ -142,10 +234,6 @@ form ul.inline li {
     padding-left: 7px;
 }
 
-input[type=submit].default, .submit-row input.default {
-    float: left;
-}
-
 fieldset .field-box {
     float: right;
     margin-left: 20px;
@@ -159,6 +247,11 @@ fieldset .field-box {
 .errornote {
     background-position: 100% .3em;
     padding: 4px 25px 4px 5px;
+}
+
+#changelist-search input[type="submit"] {
+    margin-left: 0;
+    margin-right: 6px;
 }
 
 /* WIDGETS */
@@ -187,9 +280,98 @@ fieldset .field-box {
     text-align: right;
 }
 
+thead th, tfoot td {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.paginator {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#changelist-filter h2 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#changelist-filter .filterset h3 {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.object-tools a {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#changelist-filter a {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+/* typography */
+
+a.addlink, a.changelink, a.deletelink {
+    background-position: 100% 50%;
+    margin: 0 10px -1px 0;
+    padding: 1px 14px 0 0;
+}
+
+/* fonts */
+
+h1 {
+    font-size: 18px;
+}
+
+.module > h2, .module caption, .inline-group h2, .inline-related h2 {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+label, th {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+input, textarea, select, button {
+    font-size: 15px;
+}
+
+input[type="submit"], input[type="button"], button {
+    height: 28px;
+}
+
+#content-related h3, #content-related-extended h3,
+#content-related h4, #content-related-extended h4 {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+td {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+#content-related, #content-related-extended {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+select[name="site_id"] {
+    font-size: 12px;
+}
+
 /* MISC */
 
 .inline-related h2 {
     text-align: right
 }
 
+#changelist .submit-row {
+    text-align: right;
+}
+
+#quick-blog input[type="submit"].default {
+    float: left;
+}
