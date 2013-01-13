@@ -268,7 +268,7 @@ p.tiny { margin-top: -2px; }
 .mini { font-size: 9px; }
 p.mini { margin-top: -3px; }
 
-.help, p.help { color: #999; font-size: 10px !important; }
+.help, p.help { color: #999; font-size: 10px; }
 
 p img, h1 img, h2 img, h3 img, h4 img, td img { vertical-align: middle; }
 

@@ -212,11 +212,13 @@ caption, th, td {
 }
 
 .submit-row {
-    text-align: right;
+    text-align: left;
 }
 
-.submit-row p.deletelink-box {
+.submit-row p.deletelink-box, .submit-row p.cancellink-box {
     float: right;
+    margin-right: 0;
+    margin-left: 8px;
 }
 
 .submit-row .deletelink {
@@ -254,6 +256,30 @@ fieldset .field-box {
     margin-right: 6px;
 }
 
+form .aligned p.help {
+    margin: 2px 136px 0 0;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0 136px 0 0;
+}
+
+ul.radiolist label input, ul.checkboxlist label input {
+    margin: 0 0 0 2px;
+}
+
+.aligned .vCheckboxLabel {
+    margin: 0 10px 0 0;
+}
+
+form .aligned input + label + p.help {
+    margin: 0 158px 0 0;
+}
+
+.description {
+    padding: 10px 15px 9px 0;
+}
+
 /* WIDGETS */
 
 .calendarnav-previous {
@@ -280,6 +306,28 @@ fieldset .field-box {
     text-align: right;
 }
 
+.selector-available, .selector-chosen {
+    float: right;
+}
+
+.selector ul.selector-chooser {
+    float: right;
+}
+
+a.selector-add:link, a.selector-add:visited {
+    background-image: url('../img/icons/icon-selector_remove-m2m_horizontal.png');
+}
+a.selector-add:hover, a.selector-add:active {
+    background-image: url('../img/icons/icon-selector_remove-m2m_horizontal-hover.png');
+}
+
+a.selector-remove:link, a.selector-remove:visited {
+    background-image: url('../img/icons/icon-selector_add-m2m_horizontal.png');
+}
+a.selector-remove:hover, a.selector-remove:active {
+    background-image: url('../img/icons/icon-selector_add-m2m_horizontal-hover.png');
+}
+
 thead th, tfoot td {
     font-size: 16px;
     line-height: 19px;
@@ -302,7 +350,6 @@ thead th, tfoot td {
 
 .object-tools a {
     font-size: 16px;
-    line-height: 19px;
 }
 
 #changelist-filter a {
@@ -316,6 +363,12 @@ a.addlink, a.changelink, a.deletelink {
     background-position: 100% 50%;
     margin: 0 10px -1px 0;
     padding: 1px 14px 0 0;
+}
+
+a.deletelink {
+    margin: 0;
+    font-size: 15px;
+    line-height: 19px;
 }
 
 /* fonts */
@@ -359,6 +412,10 @@ td {
 }
 
 select[name="site_id"] {
+    font-size: 12px;
+}
+
+.help, p.help {
     font-size: 12px;
 }
 

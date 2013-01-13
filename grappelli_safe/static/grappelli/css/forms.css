@@ -256,7 +256,7 @@ ul.radiolist label, ul.checkboxlist label {
 }
 ul.radiolist label input, ul.checkboxlist label input {
     position: relative;
-    margin: 0 2px 0 0 !important;
+    margin: 0 2px 0 0;
     vertical-align: top;
 }
 .inline-group ul.inline li {
