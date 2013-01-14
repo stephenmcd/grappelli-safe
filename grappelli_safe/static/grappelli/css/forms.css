@@ -32,7 +32,7 @@ fieldset > div:last-child {
 .inline-related .form-row {
     padding: 5px 11px;
 }
-.form-row.last, 
+.form-row.last,
 .form-row:last-child {
     border-bottom: none !important;
 }
@@ -64,7 +64,7 @@ label {
     color: #444; font-size: 11px; line-height: 14px;
     cursor: pointer;
 }
-.required label, label.required, 
+.required label, label.required,
 .form-row .required label, .form-row label.required {
     font-weight: bold;
 }
@@ -266,12 +266,12 @@ ul.radiolist label input, ul.checkboxlist label input {
 
 /*  Autocomplete Fields ................................................... */
 
-.vAutocompleteSearchField, 
+.vAutocompleteSearchField,
 .vM2MAutocompleteSearchField {
     background: #eaf5f8;
 }
 
-input.vAutocompleteRawIdAdminField, 
+input.vAutocompleteRawIdAdminField,
 input.vM2MAutocompleteRawIdAdminField {
     /*margin: 0 !important; padding: 0;
     width: 0 !important; height: 0;
@@ -283,10 +283,10 @@ input.vM2MAutocompleteRawIdAdminField {
 
 /*  Changelist Form Fields ................................................... */
 
-.change-list form table input[type=text], 
-.change-list form table input[type=password], 
-.change-list form table input[type=file], 
-.change-list form table select, 
+.change-list form table input[type=text],
+.change-list form table input[type=password],
+.change-list form table input[type=file],
+.change-list form table select,
 .change-list form table textarea {
     position: relative;
     top: -5px;
@@ -294,11 +294,11 @@ input.vM2MAutocompleteRawIdAdminField {
     vertical-align: top;
 }
 
-.change-list form table input[type=radio], 
+.change-list form table input[type=radio],
 .change-list form table input[type=checkbox] {
     position: relative; top: 1px;
 }
-.change-list form table thead input[type=radio], 
+.change-list form table thead input[type=radio],
 .change-list form table thead input[type=checkbox] {
     top: 0;
 }
@@ -308,11 +308,11 @@ input.vM2MAutocompleteRawIdAdminField {
 /* Form Fields Widths & Heights
 ------------------------------------------------------------------------------------------------------ */
 
-input[type=text], input[type=password], 
-input.vDateField, input.vTimeField, 
-.change-list form table .vAutocompleteSearchField, 
-.change-list form table .vM2MAutocompleteSearchField, 
-.inline-tabular .vAutocompleteSearchField, 
+input[type=text], input[type=password],
+input.vDateField, input.vTimeField,
+.change-list form table .vAutocompleteSearchField,
+.change-list form table .vM2MAutocompleteSearchField,
+.inline-tabular .vAutocompleteSearchField,
 .inline-tabular .vM2MAutocompleteSearchField {
     width: 100px;
 }
@@ -320,28 +320,28 @@ select {
     min-width: 108px;
 }
 
-input.vTextField, input.vURLField, input.vFileBrowseField, textarea, 
-.vLargeTextField, .vXMLLargeTextField, 
-.change-form .vAutocompleteSearchField, 
+input.vTextField, input.vURLField, input.vFileBrowseField, textarea,
+.vLargeTextField, .vXMLLargeTextField,
+.change-form .vAutocompleteSearchField,
 .change-form .vM2MAutocompleteSearchField {
     width: 692px;
 }
 
-input.vForeignKeyRawIdAdminField, input.vIntegerField, input.vPositiveSmallIntegerField, 
-input.vManyToManyRawIdAdminField, 
+input.vForeignKeyRawIdAdminField, input.vIntegerField, input.vPositiveSmallIntegerField,
+input.vManyToManyRawIdAdminField,
 .inline-tabular input[type=text], .inline-tabular textarea {
     width: 100px;
 }
 
-.inline-tabular input.vTextField, 
-.inline-tabular textarea.vLargeTextField, 
+.inline-tabular input.vTextField,
+.inline-tabular textarea.vLargeTextField,
 .inline-tabular input.vFileBrowseField {
     width: 230px;
 }
 .inline-tabular textarea.vLargeTextField {
     height: 100px;
 }
-.inline-tabular .form-cell>select, 
+.inline-tabular .form-cell>select,
 .change-list form table select {
     max-width: 230px;
 }
@@ -422,12 +422,12 @@ input[type=submit], input[type=button], button {
     }
 }
 
-.submit-row p.deletelink-box, 
+.submit-row p.deletelink-box,
 .submit-row p.cancellink-box {
     position: relative; float: left;
     margin-right: 8px;
 }
-.submit-row a.deletelink, 
+.submit-row a.deletelink,
 .submit-row a.cancellink {
     display: block;
     padding: 5px 7px 4px;
@@ -446,12 +446,12 @@ input[type=submit].default, input[type=button].default, button.default {
     background: #ddd;
 }
 
-input[type=submit]:hover, input[type=submit]:active, 
-input[type=submit].default:hover, input[type=submit].default:active, 
-input[type=button]:hover, input[type=button]:active, 
-button:hover, button:active, 
-.submit-row a.deletelink:hover, .submit-row a.deletelink:active, 
-.submit-row a.cancellink:hover, .submit-row a.cancellink:active { 
+input[type=submit]:hover, input[type=submit]:active,
+input[type=submit].default:hover, input[type=submit].default:active,
+input[type=button]:hover, input[type=button]:active,
+button:hover, button:active,
+.submit-row a.deletelink:hover, .submit-row a.deletelink:active,
+.submit-row a.cancellink:hover, .submit-row a.cancellink:active {
     color: #fff;
     background: #444;
 }
@@ -510,7 +510,7 @@ td ul.errorlist li {
     padding-left: 0;
 }
 
-.error input, .error select, .errors input, .errors select {
+.error input, .error select, .errors input, .errors select, .errors textarea {
     border: 1px solid #bf3030;
 }
 .description {
