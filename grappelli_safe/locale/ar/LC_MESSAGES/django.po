@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: grappelli-safe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-12 08:59-0500\n"
-"PO-Revision-Date: 2013-01-12 09:03-0500\n"
+"PO-Revision-Date: 2013-01-14 03:50-0500\n"
 "Last-Translator: Ahmad Khayyat <akhayyat@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -323,22 +323,22 @@ msgstr ""
 
 #: templates/admin/auth/user/add_form.html:13
 msgid "Username"
-msgstr ""
+msgstr "اسم المستخدم"
 
 #: templates/admin/auth/user/add_form.html:20
 #: templates/admin/auth/user/change_password.html:33
 msgid "Password"
-msgstr ""
+msgstr "كلمة السر"
 
 #: templates/admin/auth/user/add_form.html:26
 #: templates/admin/auth/user/change_password.html:39
 msgid "Password (again)"
-msgstr ""
+msgstr "كلمة السر (مرة أخرى)"
 
 #: templates/admin/auth/user/add_form.html:27
 #: templates/admin/auth/user/change_password.html:40
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "أدخل كلمة السر أعلاه ذاتها، للتأكد من صحتها."
 
 #: templates/admin/auth/user/change_password.html:13
 #: templates/admin/auth/user/change_password.html:46
@@ -346,12 +346,12 @@ msgstr ""
 #: templates/registration/password_change_done.html:10
 #: templates/registration/password_change_form.html:10
 msgid "Change password"
-msgstr ""
+msgstr "تغيير كلمة السر"
 
 #: templates/admin/auth/user/change_password.html:26
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
-msgstr ""
+msgstr "أدخل كلمة سر جديدة للمستخدم <strong>%(username)s</strong>."
 
 #: templates/admin/edit_inline/stacked.html:6
 msgid "Open All Items"
@@ -464,7 +464,7 @@ msgstr ""
 #: templates/grappelli/help/help.html:10
 #: templates/grappelli/help/help_detail.html:22
 msgid "Help"
-msgstr ""
+msgstr "مساعدة"
 
 #: templates/grappelli/help/help.html:15
 msgid "This section should explain the handling of the Admin-Interface/CMS. Permissions provided, you can change/add entries to this Section."
@@ -476,45 +476,45 @@ msgstr ""
 
 #: templates/registration/logged_out.html:7
 msgid "Log in again"
-msgstr ""
+msgstr "دخول مرة أخرى"
 
 #: templates/registration/password_change_done.html:17
 #: templates/registration/password_change_form.html:17
 #: templates/registration/password_change_form.html:21
 msgid "Password change"
-msgstr ""
+msgstr "تغيير كلمة السر"
 
 #: templates/registration/password_change_done.html:19
 #: templates/registration/password_change_done.html:23
 msgid "Password change successful"
-msgstr ""
+msgstr "تم تغيير كلمة السر بنجاح"
 
 #: templates/registration/password_change_done.html:25
 msgid "Your password was changed."
-msgstr ""
+msgstr "تم تغيير كلمة السر."
 
 #: templates/registration/password_change_form.html:23
 msgid "Please enter your old password, for securitys sake, and then enter your new password twice so we can verify you typed it in correctly."
-msgstr ""
+msgstr "فضلاً أدخل كلمة السر الحالية للتأكد من هويتك، ثم أدخل كلمة السر الجديدة مرتين للتأكد من أنك أدخلتها بشكل صحيح."
 
 #: templates/registration/password_change_form.html:30
 msgid "Old password:"
-msgstr ""
+msgstr "كلمة السر القديمة:"
 
 #: templates/registration/password_change_form.html:34
 #: templates/registration/password_reset_confirm.html:18
 msgid "New password:"
-msgstr ""
+msgstr "كلمة السر الجديدة:"
 
 #: templates/registration/password_change_form.html:38
 #: templates/registration/password_reset_confirm.html:20
 msgid "Confirm password:"
-msgstr ""
+msgstr "تأكيد كلمة السر: "
 
 #: templates/registration/password_change_form.html:41
 #: templates/registration/password_reset_confirm.html:21
 msgid "Change my password"
-msgstr ""
+msgstr "تغيير كلمة السر"
 
 #: templates/registration/password_reset_complete.html:4
 #: templates/registration/password_reset_confirm.html:6
@@ -523,81 +523,81 @@ msgstr ""
 #: templates/registration/password_reset_form.html:6
 #: templates/registration/password_reset_form.html:10
 msgid "Password reset"
-msgstr ""
+msgstr "إعادة تعيين كلمة السر"
 
 #: templates/registration/password_reset_complete.html:6
 #: templates/registration/password_reset_complete.html:10
 msgid "Password reset complete"
-msgstr ""
+msgstr "تمت إعادة تعيين كلمة السر"
 
 #: templates/registration/password_reset_complete.html:12
 msgid "Your password has been set.  You may go ahead and log in now."
-msgstr ""
+msgstr "تم تعيين كلمة السر. يمكنك الدخول الآن."
 
 #: templates/registration/password_reset_confirm.html:4
 msgid "Password reset confirmation"
-msgstr ""
+msgstr "تأكيد إعادة تعيين كلمة السر"
 
 #: templates/registration/password_reset_confirm.html:12
 msgid "Enter new password"
-msgstr ""
+msgstr "أدخل كلمة السر الجديدة"
 
 #: templates/registration/password_reset_confirm.html:14
 msgid "Please enter your new password twice so we can verify you typed it in correctly."
-msgstr ""
+msgstr "فضلاً أدخل كلمة السر الجديدة مرتين للتأكد من أنك أدخلتها بشكل صحيح."
 
 #: templates/registration/password_reset_confirm.html:26
 msgid "Password reset unsuccessful"
-msgstr ""
+msgstr "لم تنجح عملية إعادة تعيين كلمة السر"
 
 #: templates/registration/password_reset_confirm.html:28
 msgid "The password reset link was invalid, possibly because it has already been used.  Please request a new password reset."
-msgstr ""
+msgstr "رابط إعادة تعيين كلمة السر غير صالح، ربما لأنه قد تم استخدامه من قبل. فضلاً أعد طلب إعادة تعيين كلمة السر."
 
 #: templates/registration/password_reset_done.html:6
 #: templates/registration/password_reset_done.html:10
 msgid "Password reset successful"
-msgstr ""
+msgstr "تمت إعادة تعيين كلمة السر بنجاح"
 
 #: templates/registration/password_reset_done.html:12
 msgid "We've e-mailed a new password to the e-mail address you submitted. You should be receiving it shortly."
-msgstr ""
+msgstr "تم إرسال كلمة سر جديدة إلى عنوان البريد الإلكتروني الذي أدخلته. يفترض أن تستلمها قريباً."
 
 #: templates/registration/password_reset_email.html:2
 msgid "You're receiving this e-mail because you requested a password reset"
-msgstr ""
+msgstr "لقد تلقيت هذه الرسالة لأنك طلبت إعادة تعيين كلمة السر"
 
 #: templates/registration/password_reset_email.html:3
 #, python-format
 msgid "for your user account at %(site_name)s"
-msgstr ""
+msgstr "لحسابك في %(site_name)s"
 
 #: templates/registration/password_reset_email.html:5
 msgid "Please go to the following page and choose a new password:"
-msgstr ""
+msgstr "فضلاً توجه إلى الصفحة التالية واختر كلمة سر جديدة:"
 
 #: templates/registration/password_reset_email.html:9
 msgid "Your username, in case you've forgotten:"
-msgstr ""
+msgstr "للتذكير، فإن اسم المستخدم الخاص بك هو:"
 
 #: templates/registration/password_reset_email.html:11
 msgid "Thanks for using our site!"
-msgstr ""
+msgstr "شكراً لزيارتك موقعنا!"
 
 #: templates/registration/password_reset_email.html:13
 #, python-format
 msgid "The %(site_name)s team"
-msgstr ""
+msgstr "فريق موقع %(site_name)s"
 
 #: templates/registration/password_reset_form.html:12
 msgid "Forgotten your password? Enter your e-mail address below, and we'll reset your password and e-mail the new one to you."
-msgstr ""
+msgstr "هل نسيت كلمة السر؟ أدخل عنوان بريدك الإلكتروني أدناه، وسيتم تعيين كلمة سر جديدة لك وإرسالها إليك بالبريد الإلكتروني."
 
 #: templates/registration/password_reset_form.html:16
 msgid "E-mail address:"
-msgstr ""
+msgstr "عنوان البريد الإلكتروني:"
 
 #: templates/registration/password_reset_form.html:16
 msgid "Reset my password"
-msgstr ""
+msgstr "إعادة تعيين كلمة السر"
 
