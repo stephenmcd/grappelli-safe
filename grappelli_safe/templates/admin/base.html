@@ -10,7 +10,6 @@
 <!-- STYLESHEETS / EXTRASTYLE -->
 {% block stylesheets %}
     <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/base.css" />
-    {% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% admin_media_prefix %}css/rtl.css{% endblock %}" />{% endif %}
 {% endblock %}
 {% block extrastyle %}{% endblock %}
 
@@ -23,6 +22,11 @@
     </script>
 {% endblock %}
 {% block extrahead %}{% endblock %}
+{% if LANGUAGE_BIDI %}
+{% block rtl_styles %}
+<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% admin_media_prefix %}css/rtl.css{% endblock %}" />
+{% endblock %}
+{% endif %}
 
 </head>
 
