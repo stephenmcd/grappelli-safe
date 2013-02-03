@@ -7,10 +7,13 @@
 {% block stylesheets %}
     {{ block.super }}
     <link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.css" />
+{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.rtl.css" />{% endif %}
+{% endblock %}
 {% endblock %}
 {% block javascripts %}
     {{ block.super }}
     <script type="text/javascript" src="{% admin_media_prefix %}js/admin/CollapsibleGroup.js"></script>
+{% endblock %}
 {% endblock %}
 
 <!-- COLTYPE/BODYCLASS -->
