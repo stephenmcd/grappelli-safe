@@ -1,0 +1,8 @@
+
+.aligned .vCheckboxLabel {
+    float: right;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0 3px 0 13px;
+}
