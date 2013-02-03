@@ -7,7 +7,9 @@
 {% block stylesheets %}
     {{ block.super }}
     <link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.css" />
-{% if LANGUAGE_BIDI %}<link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.rtl.css" />{% endif %}
+    {% if LANGUAGE_BIDI %}
+        <link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.rtl.css" />
+    {% endif %}
 {% endblock %}
 {% endblock %}
 {% block javascripts %}
