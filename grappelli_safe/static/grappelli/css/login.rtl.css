@@ -1,0 +1,8 @@
+.login .form-row label {
+    display: block; float: right;
+    padding: 10 0px 6px 0;
+}
+.login .form-row  label label-rtl {
+    float: right;
+}
+
