@@ -245,6 +245,9 @@ table input[type=checkbox], table input[type=radio] {
     margin: 4px 0 5px; padding: 0;
     line-height: 14px; font-weight: normal;
 }
+#changelist ul.radiolist {
+    margin: 0;
+}
 ul.inline li {
     float: left;
     white-space: nowrap;
