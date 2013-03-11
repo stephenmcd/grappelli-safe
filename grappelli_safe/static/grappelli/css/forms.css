@@ -165,6 +165,15 @@ input[type=text], input[type=password] {
 }
 
 
+/*  URL .................................................... */
+
+#content p.url {
+    display: inline-block;
+    line-height: 2.4em;
+    margin: 0 0 10px;
+}
+
+
 /*  File ................................................... */
 
 input[type=file] {
