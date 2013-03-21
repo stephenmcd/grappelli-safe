@@ -165,6 +165,15 @@ input[type=text], input[type=password] {
 }
 
 
+/*  URL .................................................... */
+
+#content p.url {
+    display: inline-block;
+    line-height: 2.4em;
+    margin: 0 0 10px;
+}
+
+
 /*  File ................................................... */
 
 input[type=file] {
@@ -245,6 +254,9 @@ table input[type=checkbox], table input[type=radio] {
     margin: 4px 0 5px; padding: 0;
     line-height: 14px; font-weight: normal;
 }
+#changelist ul.radiolist {
+    margin: 0;
+}
 ul.inline li {
     float: left;
     white-space: nowrap;
@@ -256,7 +268,7 @@ ul.radiolist label, ul.checkboxlist label {
 }
 ul.radiolist label input, ul.checkboxlist label input {
     position: relative;
-    margin: 0 2px 0 0 !important;
+    margin: 0 2px 0 0;
     vertical-align: top;
 }
 .inline-group ul.inline li {
