@@ -17,16 +17,6 @@ from grappelli_safe.settings import *
 
 register = template.Library()
 
-@register.filter
-def use_grappelli_media(media):
-    html = []
-    for attr in ("render_js", "render_css"):
-        for f in getattr(media, attr)():
-            f = f.replace(settings.STATIC_URL + "admin/",
-                          settings.ADMIN_MEDIA_PREFIX, 1)
-            html.append(f)
-    return mark_safe("\n".join(html))
-
 
 # SEARCH FIELDS VERBOSE
 class GetSearchFields(template.Node):

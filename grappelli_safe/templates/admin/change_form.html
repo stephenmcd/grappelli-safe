@@ -1,17 +1,17 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load i18n future admin_modify adminmedia grp_tags grp_csrf %}
+{% load i18n future admin_modify staticfiles grp_tags grp_csrf %}
 
 <!-- JAVASCRIPTS -->
 {% block javascripts %}
     {{ block.super }}
     {% url "admin:jsi18n" as jsi18nurl %}
-    <script type="text/javascript" src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
+    <script src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
     {{ media }}
     {% if inline_admin_formsets %}
-        <script type="text/javascript" src="{% admin_media_prefix %}js/admin/Inline.js"></script>
-        <script type="text/javascript" src="{% admin_media_prefix %}js/admin/CollapsedInlineFieldsets.js"></script>
+    <script src="{% static "grappelli/" %}js/admin/Inline.js"></script>
+    <script src="{% static "grappelli/" %}js/admin/CollapsedInlineFieldsets.js"></script>
     {% endif %}
 {% endblock %}
 

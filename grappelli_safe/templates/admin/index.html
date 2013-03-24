@@ -6,11 +6,10 @@
 <!-- STYLES & SCRIPTS -->
 {% block stylesheets %}
     {{ block.super }}
-    <link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/dashboard.css" />
+    <link rel="stylesheet" type="text/css" href="{% load staticfiles %}{% static "grappelli/" %}css/dashboard.css">
 {% endblock %}
 {% block javascripts %}
     {{ block.super }}
-    <script type="text/javascript" src="{% admin_media_prefix %}js/admin/CollapsibleGroup.js"></script>
 {% endblock %}
 
 <!-- COLTYPE/BODYCLASS -->
@@ -41,13 +40,13 @@
                             {% else %}
                                 <th scope="row">{{ model.name }}</th>
                             {% endif %}
-                            
+
                             {% if model.perms.add %}
                                 <td><a href="{{ model.admin_url }}add/" class="addlink">{% trans 'Add' %}</a></td>
                             {% else %}
                                 <td>&nbsp;</td>
                             {% endif %}
-                            
+
                             {% if model.perms.change %}
                                 <td><a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a></td>
                             {% else %}
@@ -69,13 +68,13 @@
                             {% else %}
                                 <th scope="row">{{ model.name }}</th>
                             {% endif %}
-                            
+
                             {% if model.perms.add %}
                                 <td><a href="{{ model.admin_url }}add/" class="addlink">{% trans 'Add' %}</a></td>
                             {% else %}
                                 <td>&nbsp;</td>
                             {% endif %}
-                            
+
                             {% if model.perms.change %}
                                 <td><a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a></td>
                             {% else %}
@@ -104,13 +103,13 @@
                        {% else %}
                            <th scope="row">{{ model.name }}</th>
                        {% endif %}
-                       
+
                        {% if model.perms.add %}
                            <td><a href="{{ model.admin_url }}add/" class="addlink">{% trans 'Add' %}</a></td>
                        {% else %}
                            <td>&nbsp;</td>
                        {% endif %}
-                       
+
                        {% if model.perms.change %}
                            <td><a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a></td>
                        {% else %}
@@ -126,7 +125,7 @@
     {% else %}
         <p>{% trans "You don't have permission to edit anything." %}</p>
     {% endif %}
-    
+
 </div>
 {% endblock %}
 

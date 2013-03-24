@@ -1,10 +1,10 @@
 {% extends "admin/base_site.html" %}
-{% load adminmedia %}
+{% load staticfiles %}
 {% load i18n %}
 
 {% block extrastyle %}
     {{ block.super }}
-    <link rel="stylesheet" type="text/css" href="{% admin_media_prefix %}css/documentation.css" />
+    <link rel="stylesheet" type="text/css" href="{% static "grappelli/" %}css/documentation.css" />
 {% endblock %}{% block coltype %}colSM{% endblock %}
 {% block bodyclass %}dashboard documentation{% endblock %}
 {% block breadcrumbs %}<div class="breadcrumbs"><a href="/admin/">{% trans "Home" %}</a> &rsaquo; {% trans "Help" %}</div>{% endblock %}

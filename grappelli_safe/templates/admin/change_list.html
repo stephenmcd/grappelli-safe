@@ -1,11 +1,11 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load adminmedia admin_list i18n future grp_tags grp_csrf %}
+{% load staticfiles admin_list i18n future grp_tags grp_csrf %}
 
 <!-- STYLES -->
 {% block extrastyle %}
-    <link rel="stylesheet" type="text/css" href="{% load adminmedia %}{% admin_media_prefix %}css/changelist.css" />
+    <link rel="stylesheet" type="text/css" href="{% load staticfiles %}{% static "grappelli/" %}css/changelist.css" />
     {% if not actions_on_top and not actions_on_bottom %}
     <style>
         #changelist table thead th:first-child {width: inherit}
@@ -16,12 +16,11 @@
 <!-- JAVASCRIPTS -->
 {% block javascripts %}
     {% url "admin:jsi18n" as jsi18nurl %}
-    <script type="text/javascript" src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
+    <script src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
     {{ block.super }}
-    {{ media|use_grappelli_media }}
-    <script type="text/javascript" src="{% admin_media_prefix %}js/admin/Changelist.js"></script>
+    <script src="{% static "grappelli/" %}js/admin/Changelist.js"></script>
     {% if is_popup %}
-    <script type="text/javascript">
+    <script>
         // HACK: REMOVE ACTIONS and LIST_EDITABLES FOR POPUPS
         $('div.actions').hide();
         $('p.submit-row').hide();
@@ -30,7 +29,7 @@
     </script>
     {% endif %}
         {% if action_form %}
-        <script type="text/javascript" charset="utf-8">
+        <script>
             (function($) {
                 $(document).ready(function() {
                     $("tr input.action-select").actions();
