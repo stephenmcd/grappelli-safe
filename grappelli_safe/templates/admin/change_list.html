@@ -7,10 +7,12 @@
 {% block extrastyle %}
     <link rel="stylesheet" type="text/css" href="{% load staticfiles %}{% static "grappelli/" %}css/changelist.css" />
     {% if not actions_on_top and not actions_on_bottom %}
-    <style>
-        #changelist table thead th:first-child {width: inherit}
-    </style>
+    <style>#changelist table thead th:first-child {width: inherit}</style>
     {% endif %}
+    <style>
+    #changelist .actions {padding:7px;}
+    #changelist .actions label {background:none; padding:0; margin:0;}
+    </style>
 {% endblock %}
 
 <!-- JAVASCRIPTS -->
@@ -18,6 +20,7 @@
     {% url "admin:jsi18n" as jsi18nurl %}
     <script src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
     {{ block.super }}
+    {{ media }}
     <script src="{% static "grappelli/" %}js/admin/Changelist.js"></script>
     {% if is_popup %}
     <script>
@@ -27,15 +30,6 @@
         $('input.action-select').parent().hide();
         $('input#action-toggle').parent().hide();
     </script>
-    {% endif %}
-        {% if action_form %}
-        <script>
-            (function($) {
-                $(document).ready(function() {
-                    $("tr input.action-select").actions();
-                });
-            })(django.jQuery);
-        </script>
     {% endif %}
 {% endblock %}
 
