@@ -367,6 +367,14 @@ thead th, tfoot td {
     line-height: 17px;
 }
 
+.selector .selector-filter {
+    background-position: 315px 50%;
+}
+
+.selector .selector-filter input[type=text] {
+    margin: 0 25px 0 0;
+}
+
 /* typography */
 
 a.addlink, a.changelink, a.deletelink {
