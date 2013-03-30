@@ -67,6 +67,9 @@
 .selector.stacked select[multiple=multiple] {
     width: 698px;
 }
+.selector-chosen select[multiple=multiple] {
+    height: 232px;
+}
 .selector h2 + select {
     position: relative; top: -1px;
     border-top: none;
