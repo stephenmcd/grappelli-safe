@@ -41,6 +41,9 @@
     -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; border-top-left-radius: 0;
     -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; border-top-right-radius: 0;
 }
+.selector .selector-filter label {
+    padding-bottom: 0;
+}
 .selector .selector-filter input[type=text] {
     position: relative;
     margin: 0 0 0 25px;
