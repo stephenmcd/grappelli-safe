@@ -9,7 +9,7 @@
 
 <!-- STYLESHEETS / EXTRASTYLE -->
 {% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{% static "grappelli/" %}css/base.css" />
+    <link rel="stylesheet" type="text/css" href="{% static "grappelli/css/base.css" %}" />
 {% endblock %}
 {% block extrastyle %}{% endblock %}
 
@@ -24,7 +24,7 @@
 {% block extrahead %}{% endblock %}
 {% if LANGUAGE_BIDI %}
 {% block rtl_styles %}
-<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "grappelli/" %}css/rtl.css{% endblock %}" />
+<link rel="stylesheet" type="text/css" href="{% block stylesheet_rtl %}{% static "grappelli/css/rtl.css" %}{% endblock %}" />
 {% endblock %}
 {% endif %}
 
