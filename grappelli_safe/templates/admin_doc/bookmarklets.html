@@ -3,7 +3,7 @@
 {% load i18n %}
 {% block stylesheets %}
     {{ block.super }}
-    <link rel="stylesheet" type="text/css" href="{% static "grappelli/" %}css/documentation.css" />
+    <link rel="stylesheet" type="text/css" href="{% static "grappelli/css/documentation.css" %}" />
 {% endblock %}
 {% block bodyclass %}documentation{% endblock %}
 {% block breadcrumbs %}{% load i18n %}<div class="breadcrumbs"><a href="../../">{% trans "Home" %}</a> &rsaquo; <a href="../">{% trans "Documentation" %}</a> &rsaquo; {% trans "Bookmarklets" %}</div>{% endblock %}
