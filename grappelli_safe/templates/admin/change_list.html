@@ -31,6 +31,15 @@
         $('input#action-toggle').parent().hide();
     </script>
     {% endif %}
+    {% if action_form %}
+    <script>
+        (function($) {
+            $(document).ready(function() {
+                $("tr input.action-select").actions();
+            });
+        })(django.jQuery);
+    </script>
+    {% endif %}
 {% endblock %}
 
 <!-- COLTYPE/BODYCLASS-- >
