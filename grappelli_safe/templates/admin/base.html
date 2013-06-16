@@ -15,7 +15,7 @@
 
 <!-- JAVASCRIPTS / EXTRAHEAD -->
 {% block javascripts %}
-    <script type="text/javascript" src="{{ STATIC_URL }}mezzanine/js/{{ settings.JQUERY_FILENAME }}"></script>
+    <script type="text/javascript" src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
     <script type="text/javascript">
         // Admin URL
         var ADMIN_URL = "{% get_admin_url %}";
