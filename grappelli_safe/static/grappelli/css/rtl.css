@@ -290,6 +290,11 @@ table input[type="checkbox"], table input[type="radio"] {
     margin-right: 0;
 }
 
+#user_form .password #id_password {
+    direction: ltr;
+    text-align: right;
+}
+
 /* WIDGETS */
 
 .calendarnav-previous {
