@@ -394,6 +394,15 @@ a.deletelink {
     line-height: 19px;
 }
 
+blockquote {
+    margin-left: 0;
+    margin-right: 2px;
+    padding-left: 0;
+    padding-right: 4px;
+    border-left: none;
+    border-right: 5px solid #ddd;
+}
+
 /* fonts */
 
 h1 {
