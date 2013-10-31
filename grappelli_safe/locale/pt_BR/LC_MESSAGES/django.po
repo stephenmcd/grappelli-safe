@@ -113,7 +113,7 @@ msgstr ""
 
 #: templates/admin/change_form.html:41
 msgid "View on site"
-msgstr ""
+msgstr "Ver no site"
 
 #: templates/admin/change_form.html:58 templates/admin/change_list.html:82
 #: templates/admin/auth/user/change_password.html:22
@@ -125,15 +125,15 @@ msgstr[1] ""
 #: templates/admin/change_list.html:71
 #, python-format
 msgid "Add %(name)s"
-msgstr ""
+msgstr "Adicionar %(name)s"
 
 #: templates/admin/change_list.html:113 templates/admin/submit_line.html:5
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
 #: templates/admin/change_list.html:127
 msgid "Results"
-msgstr ""
+msgstr "Resultados"
 
 #: templates/admin/change_list.html:129
 #, python-format
