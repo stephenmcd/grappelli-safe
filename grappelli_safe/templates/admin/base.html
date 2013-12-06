@@ -17,6 +17,10 @@
 {% block javascripts %}
     <script type="text/javascript" src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
     <script type="text/javascript">
+        // Ensures jQuery does not pollute the global namespace
+        $.noConflict();
+    </script>
+    <script type="text/javascript">
         // Admin URL
         var ADMIN_URL = "{% get_admin_url %}";
     </script>

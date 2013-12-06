@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    
+jQuery(document).ready(function($){
+
     /// INLINE ELEMENTS
     /// collapsible elements for stacked inlines
     $('div.inline-stacked div.inline-related').each(function(i) {
@@ -11,7 +11,7 @@ $(document).ready(function(){
         $(this).parent().toggleClass('collapse-closed');
         $(this).parent().toggleClass('collapse-open');
     });
-    
+
     /// INLINEGROUPS (STACKED & TABULAR)
     $('div.inline-group.collapse-closed').each(function() {
         $(this).addClass("collapsed");
@@ -20,7 +20,7 @@ $(document).ready(function(){
     $('div.inline-group.collapse-open').each(function() {
         $(this).find('h2:first').attr("class", "collapse-toggle");
     });
-    
+
     /// OPEN STACKEDINLINE WITH ERRORS (onload)
     $('div.inline-stacked div.inline-related').find('div[class*="errors"]:first').each(function(){
         $(this).parents('div.inline-related').removeClass("collapse-closed");
@@ -30,14 +30,14 @@ $(document).ready(function(){
         $(this).parents('div.inline-stacked').removeClass("collapsed");
         $(this).parents('div.inline-stacked').addClass("collapse-open");
     });
-    
+
     /// OPEN TABULARINLINE WITH ERRORS (onload)
     $('div.inline-tabular').find('div[class*="error"]:first').each(function(i) {
         $(this).parents('div.inline-tabular').removeClass("collapse-closed");
         $(this).parents('div.inline-tabular').removeClass("collapsed");
         $(this).parents('div.inline-tabular').addClass("collapse-open");
     });
-    
+
     /// FIELDSETS WITHIN STACKED INLINES
     $('div.inline-related').find('fieldset[class*="collapse-closed"]').each(function() {
         $(this).addClass("collapsed");
@@ -51,5 +51,5 @@ $(document).ready(function(){
         $(this).parent().toggleClass('collapse-closed');
         $(this).parent().toggleClass('collapse-open');
     });
-    
+
 });
