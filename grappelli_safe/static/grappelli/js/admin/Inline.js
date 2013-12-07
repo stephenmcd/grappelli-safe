@@ -1,10 +1,10 @@
-$(document).ready(function(){
-    
+jQuery(document).ready(function($){
+
     /// add predelete class (only necessary in case of errors)
     $('div.inline-group').find('input[name*="DELETE"]:checked').each(function(i) {
         $(this).parents('div.inline-related').addClass('predelete');
     });
-    
+
     // BUTTONS (STACKED INLINE)
     $('div.inline-stacked a.closehandler').bind("click", function(){
         $(this).parents('div.inline-stacked').addClass('collapsed');
@@ -22,7 +22,7 @@ $(document).ready(function(){
         $(this).parents('div.inline-stacked').find('div.inline-related').removeClass('collapse-closed');
         $(this).parents('div.inline-stacked').find('div.inline-related').addClass('collapse-open');
     });
-    
+
     /// function for cleaning up added items
     function new_item_cleanup(new_item) {
         /// remove error-lists and error-classes
@@ -45,7 +45,7 @@ $(document).ready(function(){
         new_item.find("strong").text("");
         return new_item;
     }
-    
+
     /// ADDHANDLER
     $('div.inline-group a.addhandler').bind("click", function(){
         var inlinegroup = $(this).parents('div.inline-group');
@@ -80,13 +80,12 @@ $(document).ready(function(){
         /// do cleanup
         new_item = new_item_cleanup(new_item);
     });
-    
+
     /// DELETEHANDLER
     $('div.inline-group input[name*="DELETE"]').hide();
     $('div.inline-group a.deletelink').bind("click", function() {
         $(this).prev(':checkbox').attr('checked', !$(this).prev(':checkbox').attr('checked'));
         $(this).parents('div.inline-related').toggleClass('predelete');
     });
-    
-});
 
+});
