@@ -5,7 +5,7 @@
       <div class="item form-row{% if line.errors %} errors{% endif %} {% for field in line %}{{ field.field.name }} {% endfor %} ">
       {{ line.errors }}
       {% for field in line %}
-      <div{% if not line.fields|length_is:"1" %} class="field-box"{% endif %}> 
+      <div{% if not line.fields|length_is:"1" %} class="field-box"{% endif %}>
           {% if field.is_readonly %}
               {{ field.label_tag }}{{ field.contents }}
           {% else %}
