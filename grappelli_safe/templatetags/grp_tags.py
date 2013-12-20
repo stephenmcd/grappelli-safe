@@ -1,3 +1,5 @@
+from __future__ import unicode_literals
+from future.builtins import str
 # coding: utf-8
 
 # imports
@@ -45,10 +47,10 @@ def do_get_search_fields_verbose(parser, token):
     try:
         tag, arg = token.contents.split(None, 1)
     except:
-        raise template.TemplateSyntaxError, "%s tag requires arguments" % token.contents.split()[0]
+        raise template.TemplateSyntaxError("%s tag requires arguments" % token.contents.split()[0])
     m = re.search(r'(.*?) as (\w+)', arg)
     if not m:
-        raise template.TemplateSyntaxError, "%r tag had invalid arguments" % tag
+        raise template.TemplateSyntaxError("%r tag had invalid arguments" % tag)
     opts, var_name = m.groups()
     return GetSearchFields(opts, var_name)
 
