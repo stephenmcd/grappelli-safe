@@ -5,7 +5,7 @@
 {% block blockbots %}<meta name="robots" content="NONE,NOARCHIVE" />{% endblock %}
 
 <!-- LOADING -->
-{% load staticfiles i18n grp_tags %}
+{% load staticfiles i18n %}
 
 <!-- STYLESHEETS / EXTRASTYLE -->
 {% block stylesheets %}
@@ -20,7 +20,8 @@
 <script type="text/javascript">
     // Ensures jQuery does not pollute the global namespace
     $.noConflict();
-    var ADMIN_URL = "{% get_admin_url %}";
+    {% url "admin:index" as admin_index_url %}
+    var ADMIN_URL = "{{ admin_index_url }}";
 </script>
 {% endblock %}
 
@@ -49,8 +50,6 @@
     {% if messages %}
     <ul class="messagelist">{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>
     {% endif %}
-    <!-- GRAPPELLI MESSAGES -->
-    {% if request %}{% get_messages request.session %}{% endif %}
 
     <!-- CONTENT -->
     <div id="content" class="{% block coltype %}colM{% endblock %}">

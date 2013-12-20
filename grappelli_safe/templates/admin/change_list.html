@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load staticfiles admin_list i18n future grp_tags grp_csrf %}
+{% load staticfiles admin_list i18n future %}
 
 <!-- STYLES -->
 {% block extrastyle %}
@@ -50,7 +50,8 @@
 {% block breadcrumbs %}
 {% if not is_popup %}
     <div class="breadcrumbs">
-        <a href="{% if request.session.grappelli.home %}{{ request.session.grappelli.home }}{% else %}{% get_admin_url %}{% endif %}">{% trans "Home" %}</a> &rsaquo;
+        {% url "admin:index" as admin_index_url %}
+        <a href="{{ admin_index_url }}">{% trans "Home" %}</a> &rsaquo;
         <a href="../">{{ app_label|capfirst }}</a> &rsaquo;
         {{ cl.opts.verbose_name_plural|capfirst }}
     </div>
@@ -87,7 +88,7 @@
         <!-- Changelist -->
         <div class="module{% if cl.has_filters or cl.search_fields or cl.date_hierarchy %} filtered{% endif %}" id="changelist">
             <div class="changelist-content">
-                <form action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>{% grp_csrf_token %}
+                <form action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>{% csrf_token %}
 
                 <!-- Popup Hidden Field -->
                 {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
