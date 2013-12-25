@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(function($) {
 
     /// INLINE ELEMENTS
     /// collapsible elements for stacked inlines

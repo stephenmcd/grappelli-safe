@@ -7,7 +7,7 @@
 {% endblock %}
 {% block extrahead %}
 <script>
-$(document).ready(function(){
+jQuery(function($) {
     // Correct the position of anchors (because "#header" & "#breadcrumbs" have a "position:fixed")
     $('#content-related a').click(function(){
         var myReference = "#content-main " + $(this).attr('href');

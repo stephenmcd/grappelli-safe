@@ -7,7 +7,7 @@
 {% endblock %}
 {% block extrahead %}
 <script>
-$(document).ready(function(){
+jQuery(function($) {
     // Assign width of table.model to parent .module
     $('#content-main .module').each(function(){
         var childWidth = $('#content-main .module').children("table").outerWidth();

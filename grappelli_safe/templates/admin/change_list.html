@@ -25,19 +25,19 @@
     {% if is_popup %}
     <script>
         // HACK: REMOVE ACTIONS and LIST_EDITABLES FOR POPUPS
-        $('div.actions').hide();
-        $('p.submit-row').hide();
-        $('input.action-select').parent().hide();
-        $('input#action-toggle').parent().hide();
+        jQuery(function($) {
+            $('div.actions').hide();
+            $('p.submit-row').hide();
+            $('input.action-select').parent().hide();
+            $('input#action-toggle').parent().hide();
+        });
     </script>
     {% endif %}
     {% if action_form %}
     <script>
-        (function($) {
-            $(document).ready(function() {
-                $("tr input.action-select").actions();
-            });
-        })(django.jQuery);
+        jQuery(function($) {
+            $("tr input.action-select").actions();
+        });
     </script>
     {% endif %}
 {% endblock %}

@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(function($) {
 
     /// add predelete class (only necessary in case of errors)
     $('div.inline-group').find('input[name*="DELETE"]:checked').each(function(i) {
