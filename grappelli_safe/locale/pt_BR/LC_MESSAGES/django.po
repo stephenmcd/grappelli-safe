@@ -20,11 +20,11 @@ msgstr ""
 
 #: templates/admin/404.html:7 templates/admin/404.html.py:11
 msgid "Page not found"
-msgstr ""
+msgstr "Página não encontrada"
 
 #: templates/admin/404.html:12
 msgid "We're sorry, but the requested page could not be found."
-msgstr ""
+msgstr "Desculpe-nos, mas a página não foi encontrada."
 
 #: templates/admin/500.html:7 templates/admin/app_index.html:10
 #: templates/admin/base.html:44 templates/admin/change_form.html:25
@@ -44,29 +44,30 @@ msgstr ""
 #: templates/registration/password_reset_done.html:4
 #: templates/registration/password_reset_form.html:4
 msgid "Home"
-msgstr ""
+msgstr "Página inicial"
 
 #: templates/admin/500.html:7
 msgid "Server error"
-msgstr ""
+msgstr "Erro no servidor"
 
 #: templates/admin/500.html:10
 msgid "Server error (500)"
-msgstr ""
+msgstr "Erro no servidor (500)"
 
 #: templates/admin/500.html:14
 msgid "Server Error <em>(500)</em>"
-msgstr ""
+msgstr "Erro no servidor <em>(500)</em>"
 
 #: templates/admin/500.html:15
 msgid ""
 "There's been an error. It's been reported to the site administrators via e-"
 "mail and should be fixed shortly. Thanks for your patience."
-msgstr ""
+msgstr "Houve um erro. Ele foi informado aos administradores do site por e-" 
+"mail e deve ser corrigido brevemente. Obrigado por sua paciência. "
 
 #: templates/admin/actions.html:10
 msgid "Click here to select the objects across all pages"
-msgstr ""
+msgstr "Clique aqui para selecionar os objetos através de todas as páginas"
 
 #: templates/admin/actions.html:10
 #, python-format
@@ -75,7 +76,7 @@ msgstr ""
 
 #: templates/admin/actions.html:11
 msgid "Clear selection"
-msgstr ""
+msgstr "Limpar seleção"
 
 #: templates/admin/app_index.html:12 templates/admin/app_index.html.py:26
 #, python-format
@@ -86,18 +87,18 @@ msgstr ""
 #: templates/admin/index.html.py:63 templates/admin/index.html:97
 #, python-format
 msgid "Models available in the %(name)s application."
-msgstr ""
+msgstr "Models disponíveis na aplicação %(name)s."
 
 #: templates/admin/app_index.html:36 templates/admin/change_form.html:28
 #: templates/admin/index.html:45 templates/admin/index.html.py:73
 #: templates/admin/index.html:108
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: templates/admin/app_index.html:42 templates/admin/index.html:51
 #: templates/admin/index.html.py:79 templates/admin/index.html:114
 msgid "Change"
-msgstr ""
+msgstr "Alterar"
 
 #: templates/admin/base_site.html:7
 msgid "Django site admin"
@@ -109,7 +110,7 @@ msgstr ""
 
 #: templates/admin/change_form.html:40 templates/admin/object_history.html:13
 msgid "History"
-msgstr ""
+msgstr "Histórico"
 
 #: templates/admin/change_form.html:41
 msgid "View on site"
@@ -119,8 +120,8 @@ msgstr "Ver no site"
 #: templates/admin/auth/user/change_password.html:22
 msgid "Please correct the error below."
 msgid_plural "Please correct the errors below."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Por favor corrija o erro abaixo."
+msgstr[1] "Por favor corrija os erros abaixo."
 
 #: templates/admin/change_list.html:71
 #, python-format
@@ -189,11 +190,11 @@ msgstr "Cancelar"
 #: templates/admin/delete_confirmation.html:43
 #: templates/admin/delete_selected_confirmation.html:38
 msgid "Yes, I'm sure"
-msgstr ""
+msgstr "Sim, eu tenho certeza"
 
 #: templates/admin/delete_selected_confirmation.html:12
 msgid "Delete multiple objects"
-msgstr ""
+msgstr "Deletar múltiplos objetos"
 
 #: templates/admin/delete_selected_confirmation.html:19
 #, python-format
@@ -221,15 +222,15 @@ msgstr ""
 
 #: templates/admin/index.html:136
 msgid "Recent Actions"
-msgstr ""
+msgstr "Ações recentes"
 
 #: templates/admin/index.html:137
 msgid "My Actions"
-msgstr ""
+msgstr "Minhas ações"
 
 #: templates/admin/index.html:141
 msgid "None available"
-msgstr ""
+msgstr "Nenhum(a) disponível"
 
 #: templates/admin/invalid_setup.html:11
 msgid ""
@@ -240,11 +241,11 @@ msgstr ""
 
 #: templates/admin/login.html:28
 msgid "Username:"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: templates/admin/login.html:31
 msgid "Password:"
-msgstr ""
+msgstr "Senha"
 
 #: templates/admin/login.html:36
 #: templates/registration/password_reset_complete.html:14
@@ -257,7 +258,7 @@ msgstr ""
 
 #: templates/admin/object_history.html:26
 msgid "User"
-msgstr ""
+msgstr "Usuário"
 
 #: templates/admin/object_history.html:27
 msgid "Action"
@@ -279,29 +280,29 @@ msgstr ""
 
 #: templates/admin/search_form.html:7
 msgid "Search"
-msgstr ""
+msgstr "Busca"
 
 #: templates/admin/search_form.html:20
 msgid "Search for"
-msgstr ""
+msgstr "Buscar por"
 
 #: templates/admin/submit_line.html:6
 msgid "Save as new"
-msgstr ""
+msgstr "Salvar como novo"
 
 #: templates/admin/submit_line.html:7
 msgid "Save and add another"
-msgstr ""
+msgstr "Salvar e adicionar outro(a)"
 
 #: templates/admin/submit_line.html:8
 msgid "Save and continue editing"
-msgstr ""
+msgstr "Salvar e continuar editando"
 
 #: templates/admin/auth/user/add_form.html:6
 msgid ""
 "First, enter a username and password. Then, you'll be able to edit more user "
 "options."
-msgstr ""
+msgstr "Primeiro, digite um nome de usuário e senha. Então, você poderá editar mais opções de usuário."
 
 #: templates/admin/auth/user/add_form.html:13
 msgid "Username"
@@ -310,17 +311,17 @@ msgstr ""
 #: templates/admin/auth/user/add_form.html:20
 #: templates/admin/auth/user/change_password.html:33
 msgid "Password"
-msgstr ""
+msgstr "Senha"
 
 #: templates/admin/auth/user/add_form.html:26
 #: templates/admin/auth/user/change_password.html:39
 msgid "Password (again)"
-msgstr ""
+msgstr "Senha (novamente)"
 
 #: templates/admin/auth/user/add_form.html:27
 #: templates/admin/auth/user/change_password.html:40
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Digite a mesma senha que acima, para verificação."
 
 #: templates/admin/auth/user/change_password.html:13
 #: templates/admin/auth/user/change_password.html:46
@@ -328,35 +329,35 @@ msgstr ""
 #: templates/registration/password_change_done.html:10
 #: templates/registration/password_change_form.html:10
 msgid "Change password"
-msgstr ""
+msgstr "Alterar senha"
 
 #: templates/admin/auth/user/change_password.html:26
 #, python-format
 msgid "Enter a new password for the user <strong>%(username)s</strong>."
-msgstr ""
+msgstr "Digite uma nova senha para o usuário <strong>%(username)s</strong>."
 
 #: templates/admin/edit_inline/stacked.html:6
 msgid "Open All Items"
-msgstr ""
+msgstr "Abrir Todos Itens"
 
 #: templates/admin/edit_inline/stacked.html:7
 msgid "Close All Items"
-msgstr ""
+msgstr "Fechar Todos Itens"
 
 #: templates/admin/edit_inline/stacked.html:8
 #: templates/admin/edit_inline/tabular.html:6
 msgid "Add Item"
-msgstr ""
+msgstr "Adicionar Item"
 
 #: templates/admin/edit_inline/stacked.html:18
 #: templates/admin/edit_inline/tabular.html:57
 msgid "View on Site"
-msgstr ""
+msgstr "Ver no Site"
 
 #: templates/admin/edit_inline/stacked.html:20
 #: templates/admin/edit_inline/tabular.html:56
 msgid "Delete Item"
-msgstr ""
+msgstr "Deletar Item"
 
 #: templates/admin/includes_grappelli/bookmarks.html:4
 msgid "Bookmarks"
@@ -364,18 +365,18 @@ msgstr ""
 
 #: templates/admin/includes_grappelli/bookmarks.html:11
 msgid "No Bookmarks Found"
-msgstr ""
+msgstr "Nenhum Bookmark Encontrado"
 
 #: templates/admin/includes_grappelli/bookmarks.html:22
 msgid "Save Bookmark"
-msgstr ""
+msgstr "Salvar Bookmark"
 
 #: templates/admin/includes_grappelli/header.html:17
 #: templates/admin_doc/bookmarklets.html:9
 #: templates/registration/password_change_done.html:6
 #: templates/registration/password_change_form.html:6
 msgid "Documentation"
-msgstr ""
+msgstr "Documentação"
 
 #: templates/admin/includes_grappelli/header.html:34
 #: templates/registration/password_change_done.html:13
@@ -385,11 +386,11 @@ msgstr ""
 
 #: templates/admin/includes_grappelli/navigation.html:5
 msgid "Navigation"
-msgstr ""
+msgstr "Navegação"
 
 #: templates/admin/includes_grappelli/navigation.html:16
 msgid "No Items Found."
-msgstr ""
+msgstr "Nenhum Item Encontrado"
 
 #: templates/admin_doc/bookmarklets.html:9
 #: templates/admin_doc/bookmarklets.html:14
@@ -450,7 +451,7 @@ msgstr ""
 #: templates/grappelli/help/help.html:10
 #: templates/grappelli/help/help_detail.html:22
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: templates/grappelli/help/help.html:15
 msgid ""
@@ -460,11 +461,11 @@ msgstr ""
 
 #: templates/grappelli/widget/foreignkey_autocomplete.html:4
 msgid "Lookup"
-msgstr ""
+msgstr "Procurar"
 
 #: templates/registration/logged_out.html:7
 msgid "Log in again"
-msgstr ""
+msgstr "Log in novamente"
 
 #: templates/registration/password_change_done.html:17
 #: templates/registration/password_change_form.html:17
@@ -475,36 +476,37 @@ msgstr ""
 #: templates/registration/password_change_done.html:19
 #: templates/registration/password_change_done.html:23
 msgid "Password change successful"
-msgstr ""
+msgstr "Alteração de senha realizada com sucesso"
 
 #: templates/registration/password_change_done.html:25
 msgid "Your password was changed."
-msgstr ""
+msgstr "A sua senha foi alterada."
 
 #: templates/registration/password_change_form.html:23
 msgid ""
 "Please enter your old password, for securitys sake, and then enter your new "
 "password twice so we can verify you typed it in correctly."
-msgstr ""
+msgstr "Por favor digite a sua senha antiga, por segurança, e então digite a sua nova "
+"senha duas vezes, para verificarmos se você a digitou corretamente."
 
 #: templates/registration/password_change_form.html:30
 msgid "Old password:"
-msgstr ""
+msgstr "Senha antiga:"
 
 #: templates/registration/password_change_form.html:34
 #: templates/registration/password_reset_confirm.html:18
 msgid "New password:"
-msgstr ""
+msgstr "Nova senha:"
 
 #: templates/registration/password_change_form.html:38
 #: templates/registration/password_reset_confirm.html:20
 msgid "Confirm password:"
-msgstr ""
+msgstr "Confirme a senha:"
 
 #: templates/registration/password_change_form.html:41
 #: templates/registration/password_reset_confirm.html:21
 msgid "Change my password"
-msgstr ""
+msgstr "Alterar minha senha"
 
 #: templates/registration/password_reset_complete.html:4
 #: templates/registration/password_reset_confirm.html:6
@@ -536,7 +538,7 @@ msgstr ""
 msgid ""
 "Please enter your new password twice so we can verify you typed it in "
 "correctly."
-msgstr ""
+msgstr "Por favor digite a sua senha antiga duas vezes, para verificarmos se você a digitou corretamente."
 
 #: templates/registration/password_reset_confirm.html:26
 msgid "Password reset unsuccessful"
