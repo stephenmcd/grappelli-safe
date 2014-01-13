@@ -137,7 +137,9 @@
                         {% block search %}{% search_form cl %}{% endblock %}
 
                         <!-- Date Hierarchy -->
-                        {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
+                        {% if c1.date_hierarcy %}
+                            {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
+                        {% endif %}
 
                         {% if cl.has_filters %}
                         <!-- Filter -->
