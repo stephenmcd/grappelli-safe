@@ -5,14 +5,14 @@
       <div class="form-row{% if line.errors %} errors{% endif %} {% for field in line %}{{ field.field.name }} {% endfor %} ">
       {{ line.errors }}
       {% for field in line %}
-      <div{% if not line.fields|length_is:"1" %} class="field-box"{% endif %}> 
+      <div{% if not line.fields|length_is:"1" %} class="field-box"{% endif %}>
           {% if field.is_readonly %}
               {{ field.label_tag }}{{ field.contents }}
           {% else %}
               {% if field.is_checkbox %}
                   {{ field.field }}{{ field.label_tag }}
               {% else %}
-                  {{ field.label_tag }}{{ field.field }} &nbsp;
+                  {{ field.label_tag }}{{ field.field }} <span class="nbsp">&nbsp;</span>
               {% endif %}
           {% endif %}
           {% if field.field.field.help_text %}<p class="help">{{ field.field.field.help_text|safe }}</p>{% endif %}
