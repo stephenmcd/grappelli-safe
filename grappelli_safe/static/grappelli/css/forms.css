@@ -1,6 +1,5 @@
 
 
-
 /* Basic Settings, Fieldsets, Form-Rows
 ------------------------------------------------------------------------------------------------------ */
 
@@ -150,14 +149,14 @@ input:focus, textarea:focus, select:focus {
 
 /*  Text, Password ................................................... */
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email], input[type=url] {
     padding: 5px 3px 4px;
     height: 14px;
 }
 /*  Webkit browser hack: apply same horizontal padding as in moz browsers
     Moz Browsers have a default horizontal padding of 3px in input[type=submit] */
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-    input[type=text], input[type=password] {
+    input[type=text], input[type=password], input[type=email], input[type=url] {
         padding: 0 3px 4px;
         height: 19px;
         line-height: 25px !important;
