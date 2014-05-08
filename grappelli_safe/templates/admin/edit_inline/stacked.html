@@ -13,7 +13,16 @@
         {% for inline_admin_form in inline_admin_formset %}
         <div class="inline-related collapse-closed{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}"> <!-- sortable items -->
             <!-- headline, original, delete/link/sort -->
-            <h3><b>{{ inline_admin_formset.opts.verbose_name|title }} #{{ forloop.counter }}</b>&nbsp;&nbsp;{% if inline_admin_form.original %}{{ inline_admin_form.original }}{% endif %}</h3>
+            <h3>
+                {% for fieldset in inline_admin_form %}
+                    {% for line in fieldset %}
+                        {% for field in line %}
+                            {% if field.field.name == "_order" %} {{ field.field }} &nbsp; {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+                <b>{{ inline_admin_formset.opts.verbose_name|title }} #{{ forloop.counter }}</b>&nbsp;&nbsp;{% if inline_admin_form.original %}{{ inline_admin_form.original }}{% endif %}
+            </h3>
             <ul class="inline-item-tools">
                 {% if inline_admin_form.show_url %}<li><a href="../../../r/{{ inline_admin_form.original.content_type_id }}/{{ inline_admin_form.original.id }}/" class="viewsitelink" title="{% trans 'View on Site' %}" target="_blank"></a></li>{% else %}<li>&nbsp;</li>{% endif %}
                 {% if inline_admin_formset.opts.sortable %}<li><a href="javascript://" class="draghandler" title="Move Item"></a></li>{% else %}<li>&nbsp;</li>{% endif %}
