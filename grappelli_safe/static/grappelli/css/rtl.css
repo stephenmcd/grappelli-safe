@@ -228,6 +228,10 @@ caption, th, td {
     margin-left: 2px;
 }
 
+#id_slug {
+    direction: ltr;
+}
+
 form ul.inline li {
     float: right;
     padding-right: 0;
