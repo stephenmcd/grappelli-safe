@@ -18,15 +18,10 @@ ul.messagelist li, ul.messagelist li.success {
 
 /* LOGIN */
 
-.login #content-main {
-    min-width: 380px;
-}
-
 .login .form-row label {
     float: right;
     padding-left: 0.5em;
     padding-right: 0;
-    width: 140px;
 }
 
 .login .submit-row input {
