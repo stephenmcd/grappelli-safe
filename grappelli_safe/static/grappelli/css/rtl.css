@@ -210,7 +210,7 @@ caption, th, td {
 }
 
 .submit-row {
-    text-align: left;
+    text-align: right;
 }
 
 .submit-row p.deletelink-box, .submit-row p.cancellink-box {
