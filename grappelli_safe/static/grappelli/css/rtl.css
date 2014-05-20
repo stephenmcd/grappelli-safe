@@ -264,7 +264,7 @@ form .aligned p.help {
 }
 
 input[type="checkbox"], input[type="radio"] {
-    margin: 0 135px 0 0;
+    margin: 0 130px 0 0;
 }
 
 ul.radiolist label input, ul.checkboxlist label input {
