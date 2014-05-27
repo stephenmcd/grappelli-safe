@@ -3,7 +3,7 @@
 <div id="header">
     <div class="branding">&nbsp;</div>
     <!-- Title -->
-    <div class="admin-title">Mezzanine</div>
+    <div class="admin-title">{% if settings.SITE_ADMIN_TITLE %} {{ settings.SITE_ADMIN_TITLE }}{% endif %}</div>
     {% if user.is_authenticated and user.is_staff %}
     <!-- Bookmarks (temporary) -->
     <ul id="user-tools">
