@@ -6,3 +6,7 @@
 <p>{% trans "First, enter a username and password. Then, you'll be able to edit more user options." %}</p>
 
 {% endblock %}
+
+{% block inline_field_sets %}
+{# Also hide Mezzanine's site permissions field for for consistency. #}
+{% endblock %}
