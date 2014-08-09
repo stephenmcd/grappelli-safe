@@ -9,4 +9,5 @@
 
 {% block inline_field_sets %}
 {# Also hide Mezzanine's site permissions field for for consistency. #}
+<div style="visibility:hidden;">{{ block.super }}</div>
 {% endblock %}
