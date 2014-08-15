@@ -259,7 +259,7 @@ ul#bookmarks-listing li:last-child a {
 ------------------------------------------------------------------------------------------------------ */
 
 div.breadcrumbs {
-    position: fixed; top: 30px; z-index: 1000;
+    position: relative; top: 30px; z-index: 1000;
     width: 100%;
     padding: 3px 8px 3px 15px;
     color: #666; font-size: 11px; font-weight: normal; text-align: left;
