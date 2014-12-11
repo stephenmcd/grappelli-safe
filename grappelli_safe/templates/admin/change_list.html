@@ -36,7 +36,11 @@
     {% if action_form %}
     <script>
         django.jQuery(function($) {
-            $("tr input.action-select").actions();
+            $("tr input.action-select").actions({
+                allContainer: "div.actions li.all",
+                acrossQuestions: "div.actions li.question",
+                acrossClears: "div.actions li.clear"
+            });
         });
     </script>
     {% endif %}
