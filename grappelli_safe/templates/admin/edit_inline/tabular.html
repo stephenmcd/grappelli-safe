@@ -11,7 +11,7 @@
     <div class="items"> <!-- table, sortable container -->
         <div class="legend"> <!-- table header -->
             {% for field in inline_admin_formset.fields %}
-                {% if not field.is_hidden %}
+                {% if not field.widget.is_hidden %}
                     <div class="form-cell {{ field.label|lower }}">{{ field.label|capfirst }}</div>
                 {% endif %}
             {% endfor %}
@@ -29,7 +29,7 @@
             {% for fieldset in inline_admin_form %}
                 {% for line in fieldset %}
                     {% for field in line %}
-                        {% if field.is_hidden %} {{ field.field }} {% endif %}
+                        {% if field.field.is_hidden %} {{ field.field }} {% endif %}
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
@@ -39,14 +39,16 @@
             {% for fieldset in inline_admin_form %}
                 {% for line in fieldset %}
                     {% for field in line %}
-                        <div class="item form-cell {{ field.field.name }} {% if field.field.errors %} error{% endif %}">
-                            {% if field.is_readonly %}
-                            {{ field.contents }}
-                            {% else %}
-                            {{ field.field }}&nbsp;
-                            {% endif %}
-                            {{ field.field.errors.as_ul }}
-                        </div>
+                        {% if not field.field.is_hidden %}
+                            <div class="item form-cell {{ field.field.name }} {% if field.field.errors %} error{% endif %}">
+                                {% if field.is_readonly %}
+                                {{ field.contents }}
+                                {% else %}
+                                {{ field.field }}&nbsp;
+                                {% endif %}
+                                {{ field.field.errors.as_ul }}
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 {% endfor %}
             {% endfor %}
