@@ -11,5 +11,3 @@
 input {width: 280px;}
 #constrain, #onmousemovecheck {width:auto;}
 #id, #dir, #lang, #usemap, #longdesc {width:200px;}
-a.browse span:before {padding-left: 2px; content: url("../img/paper_clip.png"); text-decoration: none; }
-a.browse {text-decoration: none;}
