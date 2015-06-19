@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load i18n %}
+{% load i18n admin_urls %}
 
 <!-- BREADCRUMBS -->
 {% block breadcrumbs %}
@@ -38,7 +38,8 @@
     <ul>{{ deleted_objects|unordered_list }}</ul>
     <form action="" method="post">{% csrf_token %}
         <div class="submit-row">
-            <p class="cancellink-box"><a href="../" class="cancellink">{% trans "Cancel" %}</a></p>
+            {% url opts|admin_urlname:'change' object.pk|admin_urlquote as object_url %}
+            <p class="cancellink-box"><a href="{% add_preserved_filters object_url %}" class="cancellink">{% trans "Cancel" %}</a></p>
             <input type="hidden" name="post" value="yes" />
             <input type="submit" value="{% trans "Yes, I'm sure" %}" class="default" />
         </div>
