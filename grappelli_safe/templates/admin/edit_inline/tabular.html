@@ -14,7 +14,7 @@
         <div class="legend"> <!-- table header -->
             {% for field in inline_admin_formset.fields %}
                 {% if not field.widget.is_hidden %}
-                    <div class="form-cell {{ field.label|lower }}">{{ field.label|capfirst }}</div>
+                    <div class="form-cell {{ field.label|lower|slugify }}">{{ field.label|capfirst }}</div>
                 {% endif %}
             {% endfor %}
             <div class="form-cell">&nbsp;</div>
