@@ -33,7 +33,7 @@
             <!-- fieldsets -->
             {% if inline_admin_form.form.non_field_errors %}{{ inline_admin_form.form.non_field_errors }}{% endif %}
             {% for fieldset in inline_admin_form %}
-                {% include "admin/includes/fieldset_inline.html" %}
+                {% include "admin/includes/fieldset.html" %}
             {% endfor %}
             {{ inline_admin_form.pk_field.field }}
             {{ inline_admin_form.fk_field.field }}
