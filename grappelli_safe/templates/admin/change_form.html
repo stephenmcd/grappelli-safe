@@ -1,7 +1,7 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load i18n admin_modify staticfiles %}
+{% load i18n admin_urls admin_static admin_modify %}
 
 <!-- JAVASCRIPTS -->
 {% block javascripts %}
@@ -40,8 +40,9 @@
     {% if not is_popup %}
     <ul class="object-tools">
         {% block object-tools-items %}
-            <li><a href="history/">{% trans "History" %}</a></li>
-            {% if has_absolute_url %}<li><a href="../../../r/{{ content_type_id }}/{{ object_id }}/" class="focus" target="_blank">{% trans "View on site" %}</a></li>{% endif%}
+            {% url opts|admin_urlname:'history' original.pk|admin_urlquote as history_url %}
+            <li><a href="{{ history_url }}">{% trans "History" %}</a></li>
+            {% if has_absolute_url %}<li><a href="{{ absolute_url }}" class="focus" target="_blank">{% trans "View on site" %}</a></li>{% endif%}
         {% endblock %}
     </ul>
     {% endif %}
