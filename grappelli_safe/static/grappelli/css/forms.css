@@ -536,6 +536,6 @@ td ul.errorlist li {
 /* Dynamic Form Templates
 ------------------------------------------------------------------------------------------------------ */
 
-.inline-tabular .empty-form {
+.empty-form {
     display: none;
 }
