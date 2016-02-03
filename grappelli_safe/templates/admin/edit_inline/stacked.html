@@ -13,7 +13,8 @@
     {{ inline_admin_formset.formset.non_form_errors }}
     <div class="items"> <!-- sortable container -->
         {% for inline_admin_form in inline_admin_formset %}
-        <div class="inline-related collapse-closed{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last %} empty-form{% endif %}"> <!-- sortable items -->
+        <div id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}"
+             class="inline-related collapse-closed{% if inline_admin_form.original or inline_admin_form.show_url %} has_original{% endif %}{% if forloop.last %} empty-form{% endif %}"> <!-- sortable items -->
             <!-- headline, original, delete/link/sort -->
             <h3>
                 {% for fieldset in inline_admin_form %}

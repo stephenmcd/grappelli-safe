@@ -540,3 +540,13 @@ td ul.errorlist li {
 .empty-form {
     display: none;
 }
+.inline-tabular .inline-related.empty-form {
+    display: none;
+}
+.add-row {
+    height: 2em;
+}
+.add-row a {
+    position: absolute;
+    line-height: 2em;
+}
