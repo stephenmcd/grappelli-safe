@@ -1,9 +1,11 @@
 jQuery(function($) {
-
     /// INLINE ELEMENTS
     /// collapsible elements for stacked inlines
     $('div.inline-stacked div.inline-related').each(function(i) {
-        $(this).addClass("collapsed");
+        if(!$(this).hasClass('collapse-open')){
+            $(this).addClass("collapsed");
+        }
+
         $(this).find('h3:first').attr("class", "collapse-toggle");
     });
     $('div.inline-stacked div.inline-related h3.collapse-toggle').bind("click", function(){
