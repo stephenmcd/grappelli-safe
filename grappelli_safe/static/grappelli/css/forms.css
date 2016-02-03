@@ -544,9 +544,20 @@ td ul.errorlist li {
     display: none;
 }
 .add-row {
-    height: 2em;
+    height: 3em;
 }
 .add-row a {
     position: absolute;
-    line-height: 2em;
+    line-height: 3em;
+    font-weight: bold;
+    right: 0;
+    padding: 0 1em;
+}
+.inline-tabular span > a.inline-deletelink {
+    position: absolute;
+    right: 7px;
+    width: 20px;
+    height: 35px;
+    background: url('../img/icons/icon-inline_item_tools-deletelink.png') 50% 50% no-repeat;
+    text-indent: -9000px;
 }
