@@ -110,10 +110,6 @@
             <!-- Submit-Row -->
             {% block submit_buttons_bottom %}{% submit_row %}{% endblock %}
 
-            {% if add %}
-            <script type="text/javascript">document.getElementById("{{ adminform.first_field.auto_id }}").focus();</script>
-            {% endif %}
-
             <!-- JS for prepopulated fields -->
             {% prepopulated_fields_js %}
 
