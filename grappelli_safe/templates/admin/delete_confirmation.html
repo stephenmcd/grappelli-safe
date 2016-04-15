@@ -3,6 +3,12 @@
 <!-- LOADING -->
 {% load i18n admin_urls %}
 
+<!-- JAVASCRIPTS -->
+{% block javascripts %}
+    {{ block.super }}
+    {{ media }}
+{% endblock %}
+
 <!-- BREADCRUMBS -->
 {% block breadcrumbs %}
 <div class="breadcrumbs">
