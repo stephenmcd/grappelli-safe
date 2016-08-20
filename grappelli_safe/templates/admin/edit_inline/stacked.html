@@ -25,7 +25,7 @@
                         {% endfor %}
                     {% endfor %}
                 {% endfor %}
-                <b>{{ inline_admin_formset.opts.verbose_name|title }} #{{ forloop.counter }}</b>&nbsp;&nbsp;{% if inline_admin_form.original %}{{ inline_admin_form.original }}{% endif %}
+                <b class="inline_label">{{ inline_admin_formset.opts.verbose_name|title }} #{{ forloop.counter }}</b>&nbsp;&nbsp;{% if inline_admin_form.original %}{{ inline_admin_form.original }}{% endif %}
             </h3>
             <ul class="inline-item-tools">
                 {% if inline_admin_form.show_url %}<li><a href="../../../r/{{ inline_admin_form.original.content_type_id }}/{{ inline_admin_form.original.id }}/" class="viewsitelink" title="{% trans 'View on Site' %}" target="_blank"></a></li>{% else %}<li>&nbsp;</li>{% endif %}
