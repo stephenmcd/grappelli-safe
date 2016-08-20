@@ -7,6 +7,7 @@ setup(
     description="A snapshot of the grappelli_2 branch of django-grappelli, "
                 "packaged as a dependency for the Mezzanine CMS for Django.",
     long_description=open("README.rst").read(),
+    license="BSD 3-clause",
     author="Patrick Kranzlmueller, Axel Swoboda (vonautomatisch)",
     author_email="werkstaetten@vonautomatisch.at",
     maintainer="Stephen McDonald",
