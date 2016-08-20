@@ -56,10 +56,18 @@
   $("#{{ inline_admin_formset.formset.prefix|escapejs }}-group .inline-related").stackedFormset({
     prefix: prefix,
     addText: "{% filter escapejs %}{% blocktrans with inline_admin_formset.opts.verbose_name|capfirst as verbose_name %}Add another {{ verbose_name }}{% endblocktrans %}{% endfilter %}",
-    deleteText: "{% filter escapejs %}{% trans 'Remove' %}{% endfilter %}",
+    deleteText: "{% filter escapejs %}{% trans 'Delete Item' %}{% endfilter %}",
   });
   $(document).on("formset:added", function(event, $row, targetPrefix) {
     if (targetPrefix === prefix) {
+        // Tweak the Delete link to resemble the ones defined in template
+        var $deleteLink = $row.find(".inline-deletelink");
+        $deleteLink
+            .appendTo($row.find("ul.inline-item-tools"))
+            .wrap("<li/>")
+            .addClass("deletelink")
+            .attr("title", $deleteLink.text())
+            .text("");
         // Execute the StackedInlineAdded callback
         if ($.isFunction(window.__onStackedInlineAdded)) {
             window.__onStackedInlineAdded($row, targetPrefix);

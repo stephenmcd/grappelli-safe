@@ -553,30 +553,3 @@ td ul.errorlist li {
     right: 0;
     padding: 0 1em;
 }
-.inline-tabular span > a.inline-deletelink {
-    position: absolute;
-    right: 7px;
-    width: 20px;
-    height: 35px;
-    background: url('../img/icons/icon-inline_item_tools-deletelink.png') 50% 50% no-repeat;
-    text-indent: -9000px;
-}
-
-/* Style overrides for the Delete link on dynamic stacked inlines */
-.inline-stacked .collapse-toggle span:last-child {
-    background: url('../img/icons/icon-inline_item_tools-deletelink.png') 50% 50% no-repeat;
-    float: right;
-    height: 15px;
-    position: relative;
-    text-indent: -9000px;
-    width: 20px;
-    z-index: 1;
-}
-.inline-stacked .collapse-toggle span:last-child:hover {
-    background-image: url('../img/icons/icon-inline_item_tools-deletelink-hover.png');
-}
-.inline-stacked .collapse-toggle span > a.inline-deletelink {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
