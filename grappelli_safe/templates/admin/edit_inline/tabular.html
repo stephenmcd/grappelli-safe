@@ -96,18 +96,6 @@
             .addClass("deletelink")
             .attr("title", $deleteLink.text())
             .text("");
-        // Execute the TabularInlineAdded callback
-        if ($.isFunction(window.__onTabularInlineAdded)) {
-            window.__onTabularInlineAdded($row, targetPrefix);
-        }
-    }
-  });
-  $(document).on("formset:removed", function(event, $row, targetPrefix) {
-    if (targetPrefix === prefix) {
-        // Execute the StackedInlineRemoved callback
-        if ($.isFunction(window.__onTabularInlineRemoved)) {
-            window.__onTabularInlineRemoved($row, targetPrefix);
-        }
     }
   });
 })(django.jQuery);
