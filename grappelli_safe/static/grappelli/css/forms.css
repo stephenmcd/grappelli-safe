@@ -553,11 +553,3 @@ td ul.errorlist li {
     right: 0;
     padding: 0 1em;
 }
-.inline-tabular span > a.inline-deletelink {
-    position: absolute;
-    right: 7px;
-    width: 20px;
-    height: 35px;
-    background: url('../img/icons/icon-inline_item_tools-deletelink.png') 50% 50% no-repeat;
-    text-indent: -9000px;
-}
