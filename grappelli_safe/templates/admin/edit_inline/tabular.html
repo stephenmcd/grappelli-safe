@@ -66,7 +66,7 @@
                 </ul>
             </div>
             {{ inline_admin_form.fk_field.field }}
-            {{ inline_admin_form.pk_field.field }}
+            {% if inline_admin_form.needs_explicit_pk_field %}{{ inline_admin_form.pk_field.field }}{% endif %}
         </div>
         </div>
         {% endfor %}
