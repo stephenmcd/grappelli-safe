@@ -9,7 +9,7 @@
     <ul>
     {% for choice in choices %}
         <li class="form-row narrow{% if choice.selected %} selected{% endif %}">
-        <a href="{{ choice.query_string|iriencode }}">{{ choice.display|safe }}</a></li>
+        <a href="{{ choice.query_string|iriencode }}">{{ choice.display }}</a></li>
     {% endfor %}
     </ul>
 </div>
