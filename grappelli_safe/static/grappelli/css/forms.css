@@ -102,13 +102,13 @@ form .aligned p, form .aligned ul {
 form .aligned table p {
     margin-left: 0; padding-left: 0;
 }
-form .aligned p.help {
+form .aligned .help {
     margin: 2px 0 0 131px; padding: 0;
 }
-form .aligned input + label + p.help {
+form .aligned input + label + .help {
     margin: 0 0 0 154px; padding: 0;
 }
-td p.help {
+td .help {
     margin-bottom: 3px; padding: 0;
 }
 fieldset .field-box {
@@ -250,24 +250,27 @@ table input[type=checkbox], table input[type=radio] {
 
 /*  Radiolists & Checkboxlists ................................................... */
 
-#content ul.radiolist, #content ul.checkboxlist {
-    position: relative; display: inline-block; float: none;
+#content .form-row ul {
+    position: relative; display: inline-flex; float: none;
     margin: 4px 0 5px; padding: 0;
     line-height: 14px; font-weight: normal;
 }
 #changelist ul.radiolist {
     margin: 0;
 }
-ul.inline li {
+.result-list-container td li {
     float: left;
     white-space: nowrap;
     padding-right: 10px;
+    font-weight: normal;
 }
-ul.radiolist label, ul.checkboxlist label {
-    float: none; display: inline;
-    padding-right: 0;
+.form-row li label {
+    float: none;
+    display: inline;
+    padding-right: 10px;
+    font-weight: normal;
 }
-ul.radiolist label input, ul.checkboxlist label input {
+.form-row li label input {
     position: relative;
     margin: 0 2px 0 0;
     vertical-align: top;
