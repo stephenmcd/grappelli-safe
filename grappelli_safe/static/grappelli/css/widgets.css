@@ -5,6 +5,8 @@
 ------------------------------------------------------------------------------------------------------ */
 
 .selector {
+    align-items: center;
+    display: flex;
     position: relative; float: left; overflow: hidden;
     width: 700px;
 }
