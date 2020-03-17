@@ -8,16 +8,19 @@
     align-items: center;
     display: flex;
     position: relative; float: left; overflow: hidden;
+    width: 700px;
 }
+
 .selector-available, .selector-chosen {
+    width: 338px;
     border: 1px solid #ccc;
     -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
     background: #ddd;
-    width: 49%;
 }
 .stacked .selector-available, .stacked .selector-chosen {
     width: 698px;
 }
+
 .selector h2, .inline-group .selector h2,
 .inline-related fieldset .selector-available h2, .inline-related fieldset .selector-chosen h2 {
     padding: 7px 5px 6px 7px;
@@ -26,6 +29,7 @@
     border-bottom: 1px solid #d0d0d0;
     background: transparent;
 }
+
 .selector .selector-filter {
     padding: 3px 5px 2px 2px;
     border-top: 1px solid #e4e4e4;
@@ -52,13 +56,15 @@
 .selector .selector-filter img {
     display: none;
 }
+
 .selector select {
     min-height: 300px;
     width: 100%;
 }
+
 .selector select[multiple=multiple] {
     margin: 0; padding-left: 3px;
-    width: 100%;
+    width: 338px; height: 200px;
     border-top: 1px solid #d0d0d0;
     border-bottom: 1px solid #d0d0d0;
     border-left: none;
@@ -74,6 +80,7 @@
     position: relative; top: -1px;
     border-top: none;
 }
+
 .selector ul.selector-chooser {
     float: left;
     margin: 110px 2px 0; padding: 0;
