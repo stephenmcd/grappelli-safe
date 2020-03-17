@@ -62,7 +62,7 @@
     width: 100%;
 }
 
-.selector select[multiple=multiple] {
+.selector select[multiple] {
     margin: 0; padding-left: 3px;
     width: 338px; height: 200px;
     border-top: 1px solid #d0d0d0;
@@ -70,10 +70,10 @@
     border-left: none;
     -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
 }
-.selector.stacked select[multiple=multiple] {
+.selector.stacked select[multiple] {
     width: 698px;
 }
-.selector-chosen select[multiple=multiple] {
+.selector-chosen select[multiple] {
     height: 232px;
 }
 .selector h2 + select {
