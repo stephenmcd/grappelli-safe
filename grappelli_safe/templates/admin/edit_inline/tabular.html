@@ -81,7 +81,8 @@
 
 (function($) {
   var prefix = "{{ inline_admin_formset.formset.prefix|escapejs }}";
-  $("#{{ inline_admin_formset.formset.prefix|escapejs }}-group .inline-related").stackedFormset({
+  var selector = "#" + prefix + "-group .inline-related" 
+  $(selector).stackedFormset(selector, {
     prefix: prefix,
     addText: "{% filter escapejs %}{% blocktrans with inline_admin_formset.opts.verbose_name|capfirst as verbose_name %}Add another {{ verbose_name }}{% endblocktrans %}{% endfilter %}",
     deleteText: "{% filter escapejs %}{% trans 'Delete Item' %}{% endfilter %}"
@@ -96,6 +97,18 @@
             .addClass("deletelink")
             .attr("title", $deleteLink.text())
             .text("");
+        // Execute the TabularInlineAdded callback
+        if ($.isFunction(window.__onTabularInlineAdded)) {
+            window.__onTabularInlineAdded($row, targetPrefix);
+        }
+    }
+  });
+  $(document).on("formset:removed", function(event, $row, targetPrefix) {
+    if (targetPrefix === prefix) {
+        // Execute the StackedInlineRemoved callback
+        if ($.isFunction(window.__onTabularInlineRemoved)) {
+            window.__onTabularInlineRemoved($row, targetPrefix);
+        }
     }
   });
 })(django.jQuery);

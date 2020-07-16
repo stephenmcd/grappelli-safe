@@ -111,7 +111,7 @@ form .aligned input + label + .help {
 td .help {
     margin-bottom: 3px; padding: 0;
 }
-fieldset .field-box {
+fieldset .fieldBox {
     float: left;
     margin-right: 45px;
     white-space: nowrap;
@@ -214,7 +214,7 @@ select {
     padding: 4px 3px 4px 0;
     height: 25px;
 }
-select[multiple=multiple] {
+select[multiple] {
     padding-left: 1px;
     height: 160px;
 }
