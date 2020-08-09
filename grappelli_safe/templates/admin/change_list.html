@@ -18,11 +18,8 @@
 {% endblock %}
 
 <!-- JAVASCRIPTS -->
-{% block javascripts %}
-    {% url "admin:jsi18n" as jsi18nurl %}
-    <script src="{{ jsi18nurl|default:"../../jsi18n/" }}"></script>
+{% block extrahead %}
     {{ block.super }}
-    {{ media }}
     <script src="{% static "grappelli/js/admin/Changelist.js" %}"></script>
     {% if is_popup %}
     <script>
@@ -46,7 +43,7 @@
         });
     </script>
     {% endif %}
-{% endblock %}
+{% endblock extrahead %}
 
 <!-- COLTYPE/BODYCLASS-- >
 {% block coltype %}flex{% endblock %}

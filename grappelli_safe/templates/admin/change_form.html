@@ -4,16 +4,13 @@
 {% load i18n admin_urls admin_static admin_modify %}
 
 <!-- JAVASCRIPTS -->
-{% block javascripts %}
+{% block extrahead %}
     {{ block.super }}
-    {% url "admin:jsi18n" as jsi18nurl %}
-    <script src="{{ jsi18nurl|default:"../../../jsi18n/" }}"></script>
-    {{ media }}
     {% if inline_admin_formsets %}
     <script src="{% static "grappelli/js/admin/Inline.js" %}"></script>
     <script src="{% static "grappelli/js/admin/CollapsedInlineFieldsets.js" %}"></script>
     {% endif %}
-{% endblock %}
+{% endblock extrahead %}
 
 <!-- COLTYPE/BODYCLASS -->
 {% block coltype %}colM{% endblock %}
@@ -63,21 +60,19 @@
             <!-- Related-objects js that was brought in with Django 1.8 (merge from grappelli) -->
             {% block admin_change_form_document_ready %}
             <script type="text/javascript">
-                (function($) {
-                    $(document).ready(function() {
-                        $('.add-another').click(function(e) {
-                            e.preventDefault();
-                            showAddAnotherPopup(this);
-                        });
-                        $('.related-lookup').click(function(e) {
-                            e.preventDefault();
-                            showRelatedObjectLookupPopup(this);
-                        });
+                django.jQuery(function($) {
+                    $('.add-another').click(function(e) {
+                        e.preventDefault();
+                        showAddAnotherPopup(this);
+                    });
+                    $('.related-lookup').click(function(e) {
+                        e.preventDefault();
+                        showRelatedObjectLookupPopup(this);
+                    });
                     {% if adminform and add %}
                         $('form#{{ opts.model_name }}_form :input:visible:enabled:first').focus()
                     {% endif %}
-                    });
-                })(django.jQuery);
+                });
             </script>
             {% endblock %}
 

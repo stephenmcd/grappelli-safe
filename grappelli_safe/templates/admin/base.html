@@ -15,18 +15,6 @@
 {% block extrastyle %}{% endblock %}
 
 <!-- JAVASCRIPTS / EXTRAHEAD -->
-{% block javascripts %}
-<script type="text/javascript" src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
-<script type="text/javascript" src="{% static "mezzanine/js/"|add:settings.JQUERY_UI_FILENAME %}"></script>
-
-<script type="text/javascript">
-    // Ensures jQuery does not pollute the global namespace
-    $.noConflict();
-    {% url "admin:index" as admin_index_url %}
-    var ADMIN_URL = "{{ admin_index_url }}";
-</script>
-{% endblock %}
-
 {% block extrahead %}{% endblock %}
 
 {% if LANGUAGE_BIDI %}
