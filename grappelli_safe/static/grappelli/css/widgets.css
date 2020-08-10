@@ -18,6 +18,13 @@
 .stacked .selector-available, .stacked .selector-chosen {
     width: 698px;
 }
+#content .form-row .selector-chooser {
+    display: block;
+}
+.selector-chooser a {
+    padding: 10px;
+    background-position: center !important;
+}
 .selector h2, .inline-group .selector h2,
 .inline-related fieldset .selector-available h2, .inline-related fieldset .selector-chosen h2 {
     padding: 7px 5px 6px 7px;
