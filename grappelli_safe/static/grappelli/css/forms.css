@@ -158,10 +158,19 @@ input:focus, textarea:focus, select:focus {
     border-color: #999 #bbb #bbb #999;
 }
 
+textarea[readonly],
+input[readonly] {
+    background: #ddd;
+    color: #888;
+}
 
-/*  Text, Password ................................................... */
+/*  Text inputs ................................................... */
 
-input[type=text], input[type=password], input[type=email], input[type=url] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"] {
     padding: 5px 3px 4px;
     height: 14px;
 }
@@ -350,6 +359,7 @@ input.vManyToManyRawIdAdminField,
 }
 
 .inline-tabular input.vTextField,
+.inline-tabular input.vURLField,
 .inline-tabular textarea.vLargeTextField,
 .inline-tabular input.vFileBrowseField {
     width: 230px;
