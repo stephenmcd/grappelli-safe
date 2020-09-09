@@ -1,12 +1,12 @@
 {% extends "admin/base_site.html" %}
 
 <!-- LOADING -->
-{% load i18n %}
+{% load i18n static %}
 
 <!-- STYLESHEETS -->
 {% block stylesheets %}
     {{ block.super }}
-    <link rel="stylesheet" type="text/css" href="{% load staticfiles %}{% static "grappelli/css/login.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "grappelli/css/login.css" %}" />
 {% endblock %}
 
 <!-- BODYCLASS -->
