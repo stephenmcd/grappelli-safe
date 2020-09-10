@@ -1,6 +1,10 @@
 .. image:: https://img.shields.io/pypi/v/grappelli-safe.svg
+   :target: https://pypi.org/project/grappelli-safe/
 .. image:: https://img.shields.io/pypi/pyversions/grappelli-safe.svg
 .. image:: https://github.com/stephenmcd/grappelli-safe/workflows/Test%20and%20release/badge.svg
+   :target: https://github.com/stephenmcd/grappelli-safe/actions?query=workflow%3A%22Test+and+release%22
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
 
 Overview
 ========
@@ -18,14 +22,7 @@ address these specific issues.
 For further details, see
 `Why are Grappelli and Filebrowser Forked? <http://mezzanine.jupo.org/docs/frequently-asked-questions.html#grappelli-filebrowser-forks>`_.
 
-Development
-===========
+Contributing
+============
 
-After cloning the repository, install the package with the extra testing requirements and run ``tox``. This will ensure you are running the tests the same way as our CI server:
-
-.. code-block:: bash
-
-    pip install -e ".[testing]"
-    tox # Use the --parallel option to run tests in parallel (faster)
-
-You might get some ``InterpreterNotFound`` errors due to not having all Python versions available in your system. That's okay as long as you're able to successfully run the test suite for at least one Python version.
+Please refer to `Mezzanine's Contribution Guidelines <https://github.com/stephenmcd/mezzanine/blob/master/CONTRIBUTING.rst>`_
