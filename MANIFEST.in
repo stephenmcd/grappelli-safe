@@ -5,4 +5,4 @@ recursive-include grappelli_safe/templates *.html
 recursive-include grappelli_safe/locale *.mo *.po
 recursive-include grappelli_safe/models/fixtures *.json
 
-exclude .releaserc
+exclude .releaserc tox.ini

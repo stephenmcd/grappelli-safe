@@ -7,35 +7,28 @@ on:
 
 jobs:
 
-  # Test
-  test:
+  # Lint
+  lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: [3.9]
-
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
         with:
-          python-version: ${{ matrix.python }}
+          python-version: 3.9
       - name: Install dependencies
-        run: pip install tox tox-gh-actions -U pip
-      - name: Run tests
-        run: |
-          tox --skip-missing-interpreters=false --parallel
-        env:
-          TOX_PARALLEL_NO_SPINNER: 1
+        run: pip install tox -U pip
+      - name: Lint
+        run: tox -e package
 
   # Create a new semantic release
   release:
-    needs: test
+    needs: [lint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.9
       - uses: cycjimmy/semantic-release-action@v2
         with:
           semantic_version: 17
