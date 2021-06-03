@@ -130,6 +130,7 @@
 }
 .module ul.actionlist {
     padding-bottom: 3px;
+    overflow-x: auto;
 }
 ul.menulist li:last-child {
     border-bottom-color: #ddd;
