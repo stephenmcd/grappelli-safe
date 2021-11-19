@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.9
       - name: Install dependencies
@@ -26,12 +26,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v1
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.9
       - uses: cycjimmy/semantic-release-action@v2
         with:
-          semantic_version: 17
+          semantic_version: 18
           extra_plugins: |
             @semantic-release/exec@5
         env:
