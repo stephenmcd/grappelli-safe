@@ -1,7 +1,7 @@
 {% load admin_list i18n %}
 
 <p class="paginator">
-    {{ cl.result_count }} {% ifequal cl.result_count 1 %}{{ cl.opts.verbose_name|escape }}{% else %}{{ cl.opts.verbose_name_plural }}{% endifequal %}
+    {{ cl.result_count }} {% if cl.result_count == 1 %}{{ cl.opts.verbose_name|escape }}{% else %}{{ cl.opts.verbose_name_plural }}{% endif %}
     {% if pagination_required %}
         <span class="separator">&nbsp;</span>
         {% for i in page_range %}

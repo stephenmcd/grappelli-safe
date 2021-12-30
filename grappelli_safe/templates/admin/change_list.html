@@ -126,7 +126,7 @@
                     <div id="changelist-filter">
 
                         <!-- Results -->
-                        {% ifnotequal cl.result_count cl.full_result_count %}
+                        {% if cl.result_count != cl.full_result_count %}
                         <div class="module results">
                             <h2>{% trans 'Results' %}</h2>
                             <div class="form-row">
@@ -134,7 +134,7 @@
                                 <a href="?{% if cl.is_popup %}_popup=1{% endif %}">{% blocktrans with cl.full_result_count as full_result_count %}{{ full_result_count }} total{% endblocktrans %}</a>
                             </div>
                         </div>
-                        {% endifnotequal %}
+                        {% endif %}
 
                         <!-- Search -->
                         {% block search %}{% search_form cl %}{% endblock %}
