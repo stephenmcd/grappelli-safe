@@ -259,13 +259,15 @@ table input[type=checkbox], table input[type=radio] {
 
 /*  Radiolists & Checkboxlists ................................................... */
 
-#content .form-row ul {
-    position: relative; display: inline-flex; float: none;
-    margin: 4px 0 5px; padding: 0;
-    line-height: 14px; font-weight: normal;
-}
-#changelist ul.radiolist {
-    margin: 0;
+#content .form-row div.radiolist,
+#content .form-row ul.radiolist {
+    position: relative;
+    display: inline-flex;
+    float: none;
+    margin: 4px 0 5px;
+    padding: 0;
+    line-height: 14px;
+    font-weight: normal;
 }
 .result-list-container td li {
     float: left;
@@ -273,13 +275,13 @@ table input[type=checkbox], table input[type=radio] {
     padding-right: 10px;
     font-weight: normal;
 }
-.form-row li label {
+.form-row .radiolist label {
     float: none;
     display: inline;
-    padding-right: 10px;
+    padding-right: 15px;
     font-weight: normal;
 }
-.form-row li label input {
+.form-row input.radiolist {
     position: relative;
     margin: 0 2px 0 0;
     vertical-align: top;
